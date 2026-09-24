@@ -19,6 +19,107 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts Cairo -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    .online-links {
+    padding: 70px 20px;
+    background: #f7f8fa;
+}
+
+.online-links .section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.online-links .section-title span {
+    display: inline-block;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.online-links .section-title h2 {
+    margin: 0 0 12px;
+}
+
+.online-links .section-title p {
+    margin: 0;
+    color: #666;
+}
+
+.online-links-grid {
+    max-width: 1000px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.online-link {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    padding: 25px;
+    background: #fff;
+    border-radius: 15px;
+    text-decoration: none;
+    color: inherit;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+    transition: 0.3s;
+}
+
+.online-link:hover {
+    transform: translateY(-5px);
+}
+
+.online-link > i {
+    font-size: 42px;
+    min-width: 50px;
+}
+
+.online-link h3 {
+    margin: 0 0 7px;
+    font-size: 20px;
+}
+
+.online-link p {
+    margin: 0;
+    color: #777;
+    font-size: 14px;
+}
+
+.online-link span {
+    margin-right: auto;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+.youtube-link > i {
+    color: #ff0000;
+}
+
+.store-link > i {
+    color: #222;
+}
+
+@media (max-width: 700px) {
+    .online-links-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .online-link {
+        padding: 20px;
+    }
+
+    .online-link > i {
+        font-size: 34px;
+    }
+
+    .online-link h3 {
+        font-size: 17px;
+    }
+
+    .online-link span {
+        display: none;
+    }
+}
     <style>
         :root {
             --primary: #0284c7;
