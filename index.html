@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>حمزاوي سات | خدمات الدش، الكاميرات، وصيانة الشاشات في المعادي</title>
     <meta name="description" content="حمزاوي سات لتركيب وصيانة الدش وكاميرات المراقبة وصيانة الرسيفرات وتركيب وصيانة شاشات الحائط في المعادي وحدائق المعادي وزهراء المعادي ودجلة والبساتين ودار السلام.">
+    <meta name="author" content="حمزاوي سات">
 
-<meta name="author" content="حمزاوي سات">
+    <link rel="canonical" href="https://aasdstarr77.github.io/satonline/">
 
-<link rel="canonical" href="https://aasdstarr77.github.io/satonline/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="حمزاوي سات | تركيب وصيانة الدش وكاميرات المراقبة">
+    <meta property="og:description" content="خدمات تركيب وصيانة الدش وكاميرات المراقبة والرسيفرات والشاشات في المعادي والمناطق المحيطة">
+    <meta property="og:url" content="https://aasdstarr77.github.io/satonline/">
+    <meta property="og:locale" content="ar_EG">
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="حمزاوي سات | تركيب وصيانة الدش وكاميرات المراقبة">
-<meta property="og:description" content="خدمات تركيب وصيانة الدش وكاميرات المراقبة والرسيفرات والشاشات في المعادي والمناطق المحيطة">
-<meta property="og:url" content="https://aasdstarr77.github.io/satonline/">
-<meta property="og:locale" content="ar_EG">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <!-- Google Fonts Cairo -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-       <style>
+    
+    <style>
         :root {
             --primary: #0284c7;
             --primary-dark: #0369a1;
@@ -355,7 +356,7 @@
             color: #fff;
             border-radius: 15px;
             padding: 40px 30px;
-            margin: 40px auto;
+            margin: 40px auto 0;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -370,6 +371,63 @@
 
         .guarantee-text p {
             opacity: 0.9;
+        }
+
+        /* Online Links Section */
+        .online-links {
+            background-color: #fff;
+            padding: 50px 5%;
+            border-top: 1px solid var(--border);
+            border-bottom: 1px solid var(--border);
+        }
+
+        .online-links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .online-link {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            padding: 20px;
+            border-radius: 10px;
+            text-decoration: none;
+            color: var(--dark);
+            border: 1px solid var(--border);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .online-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+        }
+
+        .online-link i {
+            font-size: 2.2rem;
+        }
+
+        .youtube-link i { color: #ff0000; }
+        .store-link i { color: var(--primary); }
+
+        .online-link div h3 {
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
+
+        .online-link div p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .online-link span {
+            margin-right: auto;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
         }
 
         /* FAQ Accordion */
@@ -433,50 +491,7 @@
         .floating-whatsapp:hover {
             transform: scale(1.1);
         }
-<!-- روابط حمزاوي سات -->
-<section class="online-links">
-    <div class="container">
-        <div class="section-title">
-            <span>حمزاوي سات أونلاين</span>
-            <h2>تابعنا وتسوق أونلاين</h2>
-            <p>تابع شروحات حمزاوي سات على يوتيوب وتصفح منتجاتنا على متجر سيزما</p>
-        </div>
 
-        <div class="online-links-grid">
-
-            <a href="https://youtube.com/@hmzawysat?si=rPbxc4LN2RYpf-gj"
-               target="_blank"
-               rel="noopener"
-               class="online-link youtube-link">
-
-                <i class="fa-brands fa-youtube"></i>
-
-                <div>
-                    <h3>قناة حمزاوي سات على يوتيوب</h3>
-                    <p>شروحات وأعطال الدش والرسيفرات والكاميرات</p>
-                </div>
-
-                <span>شاهد القناة</span>
-            </a>
-
-            <a href="https://cezma.com/store/hmzawysat"
-               target="_blank"
-               rel="noopener"
-               class="online-link store-link">
-
-                <i class="fa-solid fa-store"></i>
-
-                <div>
-                    <h3>متجر حمزاوي سات</h3>
-                    <p>تصفح منتجات ومستلزمات حمزاوي سات أونلاين</p>
-                </div>
-
-                <span>تصفح المتجر</span>
-            </a>
-
-        </div>
-    </div>
-</section>
         /* Footer */
         footer {
             background-color: var(--dark);
@@ -531,7 +546,7 @@
     <!-- Top Bar -->
     <div class="top-bar">
         <div class="top-info">
-            <span><i class="fa-solid fa-location-dot"></i>  المعادي والمناطق المحيطه</span>
+            <span><i class="fa-solid fa-location-dot"></i> المعادي والمناطق المحيطه</span>
             <span><i class="fa-solid fa-clock"></i> يومياً من 12:30 ظهراً حتى 11 مساءً</span>
         </div>
         <div>
@@ -547,6 +562,7 @@
             </a>
             <ul class="nav-links">
                 <li><a href="#services">خدماتنا</a></li>
+                <li><a href="#online">تابعنا وتسوق</a></li>
                 <li><a href="#faq">الأسئلة الشائعة</a></li>
                 <li><a href="#contact">تواصل معنا</a></li>
             </ul>
@@ -642,40 +658,36 @@
                     </ul>
                     <a href="tv.html" class="btn-card">تفاصيل خدمة الشاشات</a>
                 </div>
-                <!-- Service 4 -->
-<div class="service-card">
-    <div class="service-img" style="background-image: url('receiver.jpg');"></div>
+            </div>
 
-    <div class="service-body">
-        <h3>صيانة الرسيفرات</h3>
+            <!-- Service 4 -->
+            <div class="service-card">
+                <div class="service-img" style="background-image: url('receiver.jpg');"></div>
+                <div class="service-body">
+                    <h3>صيانة الرسيفرات</h3>
+                    <p>فحص وصيانة أعطال الرسيفرات ومشاكل التشغيل والصورة والصوت والإشارة ومداخل ومخارج الجهاز حسب نوع العطل.</p>
+                    <ul class="service-features">
+                        <li><i class="fa-solid fa-circle-check"></i> فحص أعطال الرسيفر</li>
+                        <li><i class="fa-solid fa-circle-check"></i> صيانة مشاكل التشغيل</li>
+                        <li><i class="fa-solid fa-circle-check"></i> فحص مشاكل الصورة والإشارة</li>
+                    </ul>
+                    <a href="receiver.html" class="btn-card">تفاصيل صيانة الرسيفرات</a>
+                </div>
+            </div>
 
-        <p>
-            فحص وصيانة أعطال الرسيفرات ومشاكل التشغيل والصورة والصوت
-            والإشارة ومداخل ومخارج الجهاز حسب نوع العطل.
-        </p>
-
-        <ul class="service-features">
-            <li><i class="fa-solid fa-circle-check"></i> فحص أعطال الرسيفر</li>
-            <li><i class="fa-solid fa-circle-check"></i> صيانة مشاكل التشغيل</li>
-            <li><i class="fa-solid fa-circle-check"></i> فحص مشاكل الصورة والإشارة</li>
-        </ul>
-
-        <a href="receiver.html" class="btn-card">
-            تفاصيل صيانة الرسيفرات
-        </a>
-    </div>
-     <!-- Service 5 -->
-              <div class="service-card">
+            <!-- Service 5 -->
+            <div class="service-card">
                 <div class="service-img" style="background-image: url('shop.jpg');"></div>
                 <div class="service-body">
-                    <h3>متجر حمزاوي سات الألكتروني</h3>
-                    <p>جميع انواع الرسيفرات ومستلزمات الدش .</p>
+                    <h3>متجر حمزاوي سات الإلكتروني</h3>
+                    <p>جميع أنواع الرسيفرات ومستلزمات الدش والكاميرات بأسعار تنافسية وضمان حقيقي.</p>
                     <ul class="service-features">
-                        <li><i class="fa-solid fa-circle-check"></i> كاميرات مراقبه ومستلزماتها</li>
+                        <li><i class="fa-solid fa-circle-check"></i> كاميرات مراقبة ومستلزماتها</li>
                         <li><i class="fa-solid fa-circle-check"></i> ضمان على جميع المبيعات</li>
-                        <li><i class="fa-solid fa-circle-check"></i>حوامل شاشات جميع المقاسات</li>
+                        <li><i class="fa-solid fa-circle-check"></i> حوامل شاشات جميع المقاسات</li>
                     </ul>
-                    <a href="https://cezma.com/store/hmzawysat" class="btn-card">متجرنا الألكتروني</a>  
+                    <a href="https://cezma.com/store/hmzawysat" class="btn-card" target="_blank">متجرنا الإلكتروني</a>  
+                </div>
             </div>
         </div>
 
@@ -686,6 +698,36 @@
                 <p>جميع قطع الغيار والتركيبات خاضعة لفترة ضمان معتمدة لضمان راحة بالك تماماً.</p>
             </div>
             <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-headset"></i> تواصل مع الصيانة</a>
+        </div>
+    </section>
+
+    <!-- روابط حمزاوي سات أونلاين -->
+    <section class="online-links" id="online">
+        <div class="container">
+            <div class="section-title">
+                <h2>تابعنا وتسوق أونلاين</h2>
+                <p>تابع شروحات حمزاوي سات على يوتيوب وتصفح منتجاتنا على متجر سيزما</p>
+            </div>
+
+            <div class="online-links-grid">
+                <a href="https://youtube.com/@hmzawysat?si=rPbxc4LN2RYpf-gj" target="_blank" rel="noopener" class="online-link youtube-link">
+                    <i class="fa-brands fa-youtube"></i>
+                    <div>
+                        <h3>قناة حمزاوي سات على يوتيوب</h3>
+                        <p>شروحات وأعطال الدش والرسيفرات والكاميرات</p>
+                    </div>
+                    <span>شاهد القناة</span>
+                </a>
+
+                <a href="https://cezma.com/store/hmzawysat" target="_blank" rel="noopener" class="online-link store-link">
+                    <i class="fa-solid fa-store"></i>
+                    <div>
+                        <h3>متجر حمزاوي سات</h3>
+                        <p>تصفح منتجات ومستلزمات حمزاوي سات أونلاين</p>
+                    </div>
+                    <span>تصفح المتجر</span>
+                </a>
+            </div>
         </div>
     </section>
 
@@ -738,44 +780,18 @@
             </div>
             <div class="footer-col">
                 <h4>روابط سريعة</h4>
-                </script>
-
-<!-- حمزاوي سات أونلاين -->
-<section>
-    <h2>تابع حمزاوي سات وتسوق أونلاين</h2>
-
-    <p>
-        تابع شروحات حمزاوي سات على يوتيوب
-        وتصفح منتجاتنا على متجر سيزما
-    </p>
-
-    <p>
-        <a href="https://youtube.com/@hmzawysat?si=rPbxc4LN2RYpf-gj"
-           target="_blank"
-           rel="noopener">
-            قناة حمزاوي سات على يوتيوب
-        </a>
-    </p>
-
-    <p>
-        <a href="https://cezma.com/store/hmzawysat"
-           target="_blank"
-           rel="noopener">
-            متجر حمزاوي سات على سيزما
-        </a>
-    </p>
-     </section>
-    <ul>
-                    <li><a href="#services" style="color: #94a3b8; text-decoration: none;">تركيب صيانة الدش</a></li>
+                <ul>
+                    <li><a href="#services" style="color: #94a3b8; text-decoration: none;">تركيب وصيانة الدش</a></li>
                     <li><a href="#services" style="color: #94a3b8; text-decoration: none;">كاميرات المراقبة</a></li>
                     <li><a href="#services" style="color: #94a3b8; text-decoration: none;">تغيير ليدات الشاشات</a></li>
+                    <li><a href="#services" style="color: #94a3b8; text-decoration: none;">صيانة الرسيفرات</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>تواصل معنا</h4>
                 <p><i class="fa-solid fa-phone"></i> الهاتف: <a href="tel:01152822263" style="color:#fff; text-decoration:none;">01152822263</a></p>
                 <p><i class="fa-brands fa-whatsapp"></i> الواتساب: <a href="https://wa.me/201152822263" style="color:#fff; text-decoration:none;" target="_blank">01152822263</a></p>
-                <p><i class="fa-solid fa-clock"></i> مواعيد العمل: يومياً من 12:30 ظهرا حتى 11 مساءً</p>
+                <p><i class="fa-solid fa-clock"></i> مواعيد العمل: يومياً من 12:30 ظهراً حتى 11 مساءً</p>
             </div>
         </div>
         <div class="footer-bottom">
@@ -793,12 +809,18 @@
             item.addEventListener('click', () => {
                 const parent = item.parentElement;
                 parent.classList.toggle('active');
+                
+                const icon = item.querySelector('i');
+                if (parent.classList.contains('active')) {
+                    icon.classList.remove('fa-chevron-down');
+                    icon.classList.add('fa-chevron-up');
+                } else {
+                    icon.classList.remove('fa-chevron-up');
+                    icon.classList.add('fa-chevron-down');
+                }
             });
         });
-   
-
-
-</footer>
+    </script>
 
 </body>
 </html>
