@@ -3,584 +3,461 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>تركيب وصيانة الشاشات في المعادي | حمزاوي سات</title>
-
-    <meta name="description" content="حمزاوي سات لتركيب وصيانة الشاشات في المعادي وحدائق المعادي وزهراء المعادي ودجلة والبساتين ودار السلام. تركيب شاشات الحائط وفحص أعطال الصورة والصوت والإضاءة والصيانة.">
-
+    
+    <!-- === سيو (SEO) محلي مخصص لخدمات الشاشات في المعادي === -->
+    <title>فني شاشات المعادي | صيانة شاشات وتركيب حوامل حائط - حمزاوي سات</title>
+    <meta name="description" content="حمزاوي سات: أفضل فني شاشات في المعادي لصيانة الشاشات (LED / LCD)، تغيير ليدات الشاشات الأصلية بضمان، وتركيب حوامل الشاشات المتحركة والثابتة. خدمة سريعة في المعادي والمناطق المحيطة.">
+    <meta name="keywords" content="فني شاشات المعادي، صيانة شاشات المعادي، تصليح شاشات المعادي، تغيير ليدات شاشات المعادي، تركيب حوامل شاشات المعادي، فني شاشات حدائق المعادي، صيانة شاشات زهراء المعادي، فني شاشات دجلة">
     <meta name="robots" content="index, follow">
 
+    <!-- كود الـ Canonical لمنع التكرار -->
     <link rel="canonical" href="https://aasdstarr77.github.io/satonline/tv.html">
 
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="تركيب وصيانة الشاشات في المعادي | حمزاوي سات">
-    <meta property="og:description" content="تركيب وصيانة شاشات الحائط وفحص أعطال الصورة والصوت والإضاءة في المعادي والمناطق المحيطة.">
-    <meta property="og:url" content="https://aasdstarr77.github.io/satonline/tv.html">
-    <meta property="og:locale" content="ar_EG">
+    <!-- === سيو جامد: بيانات منظمة لخدمات الشاشات في المعادي (Schema) === -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "حمزاوي سات لصيانة الشاشات - فرع المعادي",
+      "image": "https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=400",
+      "telephone": "+201152822263",
+      "url": "https://aasdstarr77.github.io/satonline/tv.html",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "المعادي - القاهرة",
+        "addressLocality": "المعادي، القاهرة",
+        "addressCountry": "EG"
+      },
+      "servesCrawl": [
+        "المعادي",
+        "حدائق المعادي",
+        "زهراء المعادي",
+        "دجلة",
+             ],
+      "openingHoursSpecification": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": [
+          "Monday",
+          "Tuesday",
+          "Wednesday",
+          "Thursday",
+          "Friday",
+          "Saturday",
+          "Sunday"
+        ],
+        "opens": "12:30",
+        "closes": "23:00"
+      }
+    }
+    </script>
 
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+    
     <style>
+        :root {
+            --primary: #0284c7; 
+            --primary-dark: #0369a1;
+            --secondary: #f59e0b;
+            --dark: #0f172a;
+            --light: #f8fafc;
+            --gray: #64748b;
+            --border: #e2e8f0;
+            --whatsapp: #22c55e;
+        }
+
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'Cairo', sans-serif;
+            scroll-behavior: smooth;
         }
 
         body {
-            font-family: Arial, Tahoma, sans-serif;
-            background: #f7f7f7;
-            color: #222;
-            line-height: 1.8;
+            background-color: var(--light);
+            color: var(--dark);
+            line-height: 1.6;
         }
 
-        a {
-            text-decoration: none;
-        }
-
+        /* Top Bar */
         .top-bar {
-            background: #111;
+            background-color: var(--dark);
             color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-            font-size: 14px;
-        }
-
-        header {
-            background: #fff;
-            padding: 18px 20px;
-            box-shadow: 0 2px 10px rgba(0,0,0,.08);
-        }
-
-        .header-inner {
-            max-width: 1100px;
-            margin: auto;
+            padding: 8px 5%;
             display: flex;
-            align-items: center;
             justify-content: space-between;
-            gap: 15px;
+            align-items: center;
+            font-size: 0.9rem;
+        }
+        .top-info span { margin-left: 15px; }
+        .top-info i { color: var(--secondary); margin-left: 5px; }
+
+        /* === Header Navigation: القائمة الكاملة والاحترافية === */
+        header {
+            background: #ffffff;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 5%;
+            max-width: 1300px;
+            margin: 0 auto;
         }
 
         .logo {
-            font-size: 28px;
-            font-weight: bold;
-            color: #111;
-        }
-
-        .logo span {
-            color: #d99b00;
-        }
-
-        .call-btn {
-            background: #111;
-            color: #fff;
-            padding: 10px 18px;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .hero {
-            background: linear-gradient(rgba(0,0,0,.65), rgba(0,0,0,.65)),
-            url('https://images.unsplash.com/photo-1593784991095-a205069470b6?auto=format&fit=crop&w=1400&q=80');
-            background-size: cover;
-            background-position: center;
-            color: #fff;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .hero-content {
-            max-width: 850px;
-            margin: auto;
-        }
-
-        .hero h1 {
-            font-size: 38px;
-            margin-bottom: 18px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin-bottom: 25px;
-        }
-
-        .buttons {
+            font-size: 1.6rem;
+            font-weight: 800;
+            color: var(--primary-dark);
             display: flex;
-            justify-content: center;
-            gap: 12px;
-            flex-wrap: wrap;
-        }
-
-        .btn {
-            display: inline-block;
-            padding: 13px 25px;
-            border-radius: 8px;
-            font-weight: bold;
-        }
-
-        .btn-primary {
-            background: #d99b00;
-            color: #111;
-        }
-
-        .btn-dark {
-            background: #fff;
-            color: #111;
-        }
-
-        .container {
-            max-width: 1100px;
-            margin: auto;
-            padding: 55px 20px;
-        }
-
-        .section-title {
-            text-align: center;
-            margin-bottom: 35px;
-        }
-
-        .section-title h2 {
-            font-size: 30px;
-            margin-bottom: 8px;
-        }
-
-        .section-title p {
-            color: #666;
-        }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-        }
-
-        .card {
-            background: #fff;
-            padding: 28px;
-            border-radius: 12px;
-            box-shadow: 0 3px 15px rgba(0,0,0,.07);
-        }
-
-        .card h3 {
-            margin-bottom: 12px;
-            font-size: 21px;
-        }
-
-        .card p {
-            color: #555;
-        }
-
-        .problems {
-            background: #fff;
-        }
-
-        .problem-list {
-            max-width: 850px;
-            margin: auto;
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 12px;
-        }
-
-        .problem {
-            background: #f5f5f5;
-            padding: 15px 18px;
-            border-radius: 8px;
-        }
-
-        .areas {
-            text-align: center;
-        }
-
-        .area-tags {
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap;
+            align-items: center;
             gap: 10px;
+            text-decoration: none;
         }
+        .logo i { color: var(--secondary); }
 
-        .area-tags span {
-            background: #fff;
-            border: 1px solid #ddd;
-            padding: 9px 16px;
-            border-radius: 20px;
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 12px;
+            align-items: center;
         }
-
-        .faq {
-            max-width: 850px;
-            margin: auto;
+        .nav-links a {
+            text-decoration: none;
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.9rem;
+            transition: color 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 4px;
         }
+        .nav-links a:hover, .nav-links a.active { color: var(--primary); }
+        .nav-links a i { color: var(--gray); font-size: 0.9rem; transition: color 0.3s; }
+        .nav-links a:hover i, .nav-links a.active i { color: var(--primary); }
 
-        .faq-item {
-            background: #fff;
-            margin-bottom: 12px;
-            padding: 18px 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0,0,0,.05);
-        }
-
-        .faq-item h3 {
-            font-size: 18px;
-            margin-bottom: 7px;
-        }
-
-        .cta {
-            background: #111;
+        .cta-btn-nav {
+            background-color: var(--primary);
             color: #fff;
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background 0.3s;
+            font-size: 0.85rem;
+        }
+        .cta-btn-nav:hover { background-color: var(--primary-dark); }
+
+        /* Hero Section المخصص للشاشات */
+        .hero {
+            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(3, 105, 161, 0.88)), 
+                        url('https://images.unsplash.com/photo-1593359677879-a4bb92f829d1?q=80&w=1200') center/cover;
+            color: #fff;
+            padding: 120px 5% 90px;
             text-align: center;
-            padding: 60px 20px;
         }
+        .hero-content { max-width: 850px; margin: 0 auto; }
+        .hero h1 { font-size: 2.6rem; font-weight: 900; margin-bottom: 15px; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.95; }
+        .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 12px 28px; border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: transform 0.2s, box-shadow 0.2s; }
+        .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+        .btn-call { background-color: var(--primary); color: #fff; }
+        .btn-whatsapp { background-color: var(--whatsapp); color: #fff; }
 
-        .cta h2 {
-            font-size: 30px;
-            margin-bottom: 12px;
+        /* Section Commons */
+        .section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.2rem; font-weight: 800; color: var(--dark); position: relative; display: inline-block; }
+        .section-title h2::after { content: ''; display: block; width: 60%; height: 4px; background: var(--secondary); margin: 8px auto 0; border-radius: 2px; }
+        .section-title p { color: var(--gray); margin-top: 12px; font-size: 1.1rem; }
+
+        /* TV Services Grid */
+        .tv-services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
         }
-
-        .cta p {
-            margin-bottom: 25px;
-            color: #ddd;
+        .tv-card {
+            background: #fff;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            padding: 25px;
         }
+        .tv-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
+        .tv-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
+        .tv-card h3 { font-size: 1.4rem; margin-bottom: 10px; color: var(--dark); }
+        .tv-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 15px; flex-grow: 1; }
+        .tv-features { list-style: none; border-top: 1px solid var(--border); padding-top: 15px; }
+        .tv-features li { font-size: 0.9rem; color: var(--dark); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
+        .tv-features li i { color: var(--whatsapp); font-size: 0.9rem; }
 
-        footer {
-            background: #000;
-            color: #bbb;
-            text-align: center;
-            padding: 25px 20px;
-            font-size: 14px;
+        /* areas Section المخصصة للمعادي */
+        .areas-section { background-color: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
+        .areas-grid { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: 0 auto; }
+        .area-tag { background: var(--light); color: var(--dark); padding: 10px 22px; border-radius: 30px; font-weight: 700; font-size: 0.95rem; border: 1px solid var(--border); transition: all 0.3s; }
+        .area-tag:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: translateY(-2px); }
+
+        /* FAQ Section المخصصة للشاشات في المعادي */
+        .faq-grid { max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+        .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+        .faq-question { padding: 18px 25px; font-weight: 700; font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; transition: background 0.3s; }
+        .faq-question:hover { background: #fafafa; }
+        .faq-answer { padding: 0 25px 20px; color: var(--gray); font-size: 1rem; display: none; border-top: 1px solid var(--border); padding-top: 15px; }
+        .faq-item.active .faq-answer { display: block; }
+        .faq-question i { transition: transform 0.3s; color: var(--gray); }
+        .faq-item.active .faq-question i { transform: rotate(180deg); color: var(--primary); }
+
+        /* CTA Section */
+        .cta-section { background: linear-gradient(135deg, var(--primary), var(--dark)); color: #fff; padding: 70px 5%; text-align: center; border-radius: 15px; max-width: 1000px; margin: 40px auto; }
+        .cta-section h2 { font-size: 2.2rem; margin-bottom: 15px; }
+        .cta-section p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
+        .back-home { display: inline-block; margin-top: 25px; color: var(--secondary); text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+        .back-home:hover { text-decoration: underline; }
+
+        /* Floating WhatsApp Button */
+        .floating-whatsapp { position: fixed; bottom: 20px; left: 20px; background-color: var(--whatsapp); color: white; width: 60px; height: 60px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 32px; box-shadow: 0 4px 12px rgba(0,0,0,0.3); z-index: 1000; text-decoration: none; transition: transform 0.3s; }
+        .floating-whatsapp:hover { transform: scale(1.1); }
+
+        /* Footer */
+        footer { background-color: var(--dark); color: #fff; padding: 60px 5% 20px; margin-top: 50px; }
+        .footer-content { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-bottom: 40px; }
+        .footer-col h4 { font-size: 1.25rem; margin-bottom: 20px; color: var(--secondary); }
+        .footer-col p, .footer-col li { color: #94a3b8; font-size: 0.95rem; margin-bottom: 12px; }
+        .footer-col ul { list-style: none; }
+        .footer-col a { color: #94a3b8; text-decoration: none; transition: color 0.3s; display: flex; align-items: center; gap: 8px; }
+        .footer-col a:hover { color: #fff; }
+        .footer-col a i { font-size: 0.85rem; }
+        .footer-bottom { text-align: center; border-top: 1px solid #1e293b; padding-top: 25px; color: #64748b; font-size: 0.85rem; }
+
+        @media (max-width: 992px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 2.1rem; }
         }
-
-        .back-home {
-            display: inline-block;
-            margin-top: 18px;
-            color: #d99b00;
-        }
-
-        @media (max-width: 800px) {
-            .cards {
-                grid-template-columns: 1fr;
-            }
-
-            .problem-list {
-                grid-template-columns: 1fr;
-            }
-
-            .hero h1 {
-                font-size: 29px;
-            }
-
-            .hero p {
-                font-size: 16px;
-            }
-
-            .header-inner {
-                flex-direction: column;
-            }
+        @media (max-width: 768px) {
+            .hero { padding: 90px 5% 60px; }
+            .hero h1 { font-size: 1.8rem; }
+            .section-title h2 { font-size: 1.8rem; }
+            .tv-services-grid { grid-template-columns: 1fr; }
         }
     </style>
-
-    <script type="application/ld+json">
-    {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "حمزاوي سات",
-        "url": "https://aasdstarr77.github.io/satonline/tv.html",
-        "telephone": "+201152822263",
-        "description": "تركيب وصيانة الشاشات في المعادي والمناطق المحيطة",
-        "areaServed": [
-            "المعادي",
-            "حدائق المعادي",
-            "زهراء المعادي",
-            "دجلة",
-            "صقر قريش",
-            "البساتين",
-            "دار السلام"
-        ],
-        "serviceType": [
-            "تركيب شاشات الحائط",
-            "صيانة الشاشات",
-            "تغيير ليدات الشاشات"
-        ]
-    }
-    </script>
 </head>
-
 <body>
 
+    <!-- Top Bar -->
     <div class="top-bar">
-        📺 حمزاوي سات | تركيب وصيانة الشاشات في المعادي والمناطق المحيطة
+        <div class="top-info">
+            <span><i class="fa-solid fa-location-dot"></i> المعادي، حدائق المعادي، زهراء المعادي، ودجلة</span>
+            <span><i class="fa-solid fa-clock"></i> يومياً من 12:30 ظهراً حتى 11 مساءً</span>
+        </div>
+        <div>
+            <span><i class="fa-solid fa-shield-halved"></i> ضمان حقيقي على كافة خدمات الشاشات</span>
+        </div>
     </div>
 
+    <!-- === Header Navigation: القائمة الكاملة مع رابط الصفحة الرئيسية === -->
     <header>
-        <div class="header-inner">
-            <div class="logo">
-                حمزاوي <span>سات</span>
-            </div>
-
-            <a class="call-btn" href="tel:+201152822263">
-                اتصل الآن
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <i class="fa-solid fa-satellite-dish"></i> حمزاوي سات <span style="font-size: 0.8rem; font-weight:400;">(فرع المعادي)</span>
             </a>
+            <ul class="nav-links">
+                <!-- رابط "الصفحة الرئيسية" مع أيقونة -->
+                <li><a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
+                
+                <li><a href="dish.html"><i class="fa-solid fa-satellite"></i> خدمات الدش</a></li>
+                <li><a href="camera.html"><i class="fa-solid fa-video"></i> كاميرات المراقبة</a></li>
+                <li><a href="tv.html" class="active"><i class="fa-solid fa-tv"></i> صيانة الشاشات</a></li>
+                <li><a href="receiver.html"><i class="fa-solid fa-box"></i> صيانة الرسيفر</a></li>
+                <li><a href="https://cezma.com/store/hmzawysat" target="_blank"><i class="fa-solid fa-store"></i> المتجر</a></li>
+            </ul>
+            <a href="tel:01152822263" class="cta-btn-nav"><i class="fa-solid fa-phone"></i> اطلب فني شاشات</a>
         </div>
     </header>
 
+    <!-- Hero Section المخصص للشاشات -->
     <section class="hero">
         <div class="hero-content">
-
-            <h1>
-                تركيب وصيانة الشاشات في المعادي | حمزاوي سات
-            </h1>
-
-            <p>
-                تركيب شاشات الحائط وفحص أعطال الصورة والصوت والإضاءة
-                ومعالجة مشاكل التشغيل والتوصيلات حسب نوع الشاشة والعطل.
-            </p>
-
-            <div class="buttons">
-                <a class="btn btn-primary"
-                   href="https://wa.me/201152822263?text=استفسار%20عن%20تركيب%20وصيانة%20الشاشات"
-                   target="_blank">
-                    واتساب
-                </a>
-
-                <a class="btn btn-dark" href="tel:+201152822263">
-                    اتصل الآن
-                </a>
+            <span class="badge"><i class="fa-solid fa-star"></i> مركز الخدمة الأسرع والأكثر خبرة في المعادي</span>
+            <h1>فني شاشات المعادي لصيانة LED / LCD وتغيير الليدات الأصلية</h1>
+            <p>نصلك أينما كنت في المعادي والمناطق المحيطة خلال 30 دقيقة! فني شاشات متخصص لتغيير طقم الليدات بضمان، تركيب حوامل الحائط، وحل كافة أعطال الصورة والصوت.</p>
+            <div class="hero-btns">
+                <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-phone-volume"></i> اطلب فني شاشات فوري</a>
+                <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20شاشات%20في%20منطقة%20المعادي%20من%20حمزاوي%20سات" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
             </div>
-
         </div>
     </section>
 
-    <section class="container">
-
+    <!-- TV Services Section -->
+    <section class="section" id="tv-services">
         <div class="section-title">
-            <h2>خدمات الشاشات</h2>
-            <p>حمزاوي سات يقدم خدمات تركيب وفحص وصيانة الشاشات حسب نوع العطل</p>
+            <h2>أفضل خدمات فني شاشات في المعادي</h2>
+            <p>حلول متكاملة لصيانة وتركيب كافة أنواع الشاشات بدقة واحترافية عالية</p>
         </div>
 
-        <div class="cards">
-
-            <div class="card">
-                <h3>تركيب شاشات الحائط</h3>
-                <p>
-                    تركيب الشاشة على الحائط بشكل مناسب مع ضبط مكان التثبيت
-                    وتنظيم التوصيلات والكابلات قدر الإمكان.
-                </p>
+        <div class="tv-services-grid">
+            <!-- Service 1: تغيير الليدات -->
+            <div class="tv-card">
+                <i class="fa-solid fa-lightbulb"></i>
+                <h3>تغيير ليدات الشاشات المعادي</h3>
+                <p>تغيير طقم الليدات الأصلي ومطابق للمواصفات لجميع ماركات الشاشات (Samsung, LG, Toshiba)، لحل مشاكل الشاشة السوداء والصوت الموجود بضمان.</p>
+                <ul class="tv-features">
+                    <li><i class="fa-solid fa-circle-check"></i> قطع غيار وأطقم ليدات أصلية 100%</li>
+                    <li><i class="fa-solid fa-circle-check"></i> حل مشكلة الصوت موجود والصورة سوداء</li>
+                    <li><i class="fa-solid fa-circle-check"></i> ضمان معتمد على الإضاءة والصيانة</li>
+                </ul>
             </div>
 
-            <div class="card">
-                <h3>صيانة أعطال الشاشات</h3>
-                <p>
-                    فحص مشاكل التشغيل والصورة والصوت ومداخل التوصيل
-                    وتحديد سبب العطل قبل إجراء الصيانة المناسبة.
-                </p>
+            <!-- Service 2: تركيب الحوامل -->
+            <div class="tv-card">
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h3>تركيب حوامل شاشات بالمعادي</h3>
+                <p>تركيب حوامل الشاشات (Fixed & Motion) على الحائط باحترافية، وتثبيتها بشكل آمن ومستوٍ، مع تنظيم الأسلاك قدر الإمكان لمظهر نظيف.</p>
+                <ul class="tv-features">
+                    <li><i class="fa-solid fa-circle-check"></i> تركيب حوامل ثابتة ومتحركة</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تثبيت آمن على مختلف أنواع الحوائط</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تنظيم الأسلاك والكابلات بدقة</li>
+                </ul>
             </div>
 
-            <div class="card">
-                <h3>تغيير ليدات الشاشة</h3>
-                <p>
-                    فحص مشاكل الإضاءة الخلفية مثل الشاشة التي تعمل بدون
-                    إضاءة أو وجود إضاءة غير منتظمة حسب حالة الشاشة.
-                </p>
+            <!-- Service 3: تصليح الأعطال -->
+            <div class="tv-card">
+                <i class="fa-solid fa-tv"></i>
+                <h3>تصليح أعطال شاشات المعادي</h3>
+                <p>فحص وصيانة كافة أعطال الشاشات: مشاكل الباور، توقف الصورة، مشاكل الصوت، ومداخل الـ HDMI، مع تحديد العطل بدقة قبل الصيانة.</p>
+                <ul class="tv-features">
+                    <li><i class="fa-solid fa-circle-check"></i> فحص وصيانة أعطال الباور والتشغيل</li>
+                    <li><i class="fa-solid fa-circle-check"></i> حل مشاكل التوقف عند الشعار (Logo)</li>
+                    <li><i class="fa-solid fa-circle-check"></i> صيانة مشاكل الصوت ومداخل التوصيل</li>
+                </ul>
             </div>
-
         </div>
-
     </section>
 
-    <section class="problems">
-
-        <div class="container">
-
-            <div class="section-title">
-                <h2>أعطال الشاشات الشائعة</h2>
-                <p>لو الشاشة عندك فيها واحدة من المشاكل دي تقدر تتواصل مع حمزاوي سات</p>
-            </div>
-
-            <div class="problem-list">
-
-                <div class="problem">
-                    الشاشة لا تعمل نهائياً
-                </div>
-
-                <div class="problem">
-                    الشاشة تعمل ولا توجد صورة
-                </div>
-
-                <div class="problem">
-                    الشاشة بها صوت بدون صورة
-                </div>
-
-                <div class="problem">
-                    ضعف أو انقطاع الإضاءة الخلفية
-                </div>
-
-                <div class="problem">
-                    مشكلة في مداخل HDMI أو AV
-                </div>
-
-                <div class="problem">
-                    مشاكل في الصوت
-                </div>
-
-                <div class="problem">
-                    الشاشة تفصل أثناء التشغيل
-                </div>
-
-                <div class="problem">
-                    مشاكل التوصيلات وتركيب الشاشة
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <section class="container">
-
+    <!-- areas Section المخصصة للمعادي -->
+    <section class="section areas-section">
         <div class="section-title">
-            <h2>ليه تختار حمزاوي سات لخدمة الشاشات؟</h2>
-            <p>خدمة مناسبة للمنازل والمحلات والمكاتب</p>
+            <h2>مناطق تغطية فني شاشات المعادي</h2>
+            <p>نقدم خدماتنا التقنية السريعة والاحترافية في كافة أحياء المعادي والمناطق المجاورة لها.</p>
         </div>
-
-        <div class="cards">
-
-            <div class="card">
-                <h3>فحص المشكلة</h3>
-                <p>
-                    تحديد العطل ومراجعة الأعراض والتوصيلات قبل البدء في
-                    أعمال الصيانة.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>تركيب منظم</h3>
-                <p>
-                    الاهتمام بمكان تثبيت الشاشة وتنظيم الأسلاك والتوصيلات
-                    قدر الإمكان.
-                </p>
-            </div>
-
-            <div class="card">
-                <h3>خدمة في مناطق المعادي</h3>
-                <p>
-                    خدمة تركيب وصيانة الشاشات في المعادي والمناطق القريبة.
-                </p>
-            </div>
-
+        <div class="areas-grid">
+            <span class="area-tag"># المعادي</span>
+            <span class="area-tag"># حدائق المعادي</span>
+            <span class="area-tag"># زهراء المعادي</span>
+            <span class="area-tag"># دجلة</span>
+            <span class="area-tag"># البساتين</span>
+            <span class="area-tag"># دار السلام</span>
+            <span class="area-tag"># صقر قريش</span>
         </div>
-
     </section>
 
-    <section class="container areas">
-
+    <!-- TV FAQ Section المخصصة للشاشات في المعادي -->
+    <section class="section" id="faq">
         <div class="section-title">
-            <h2>مناطق خدمة حمزاوي سات</h2>
-            <p>نقدم خدمات تركيب وصيانة الشاشات في المناطق التالية</p>
+            <h2>الأسئلة الشائعة حول صيانة الشاشات في المعادي</h2>
+            <p>إجابات فورية على أكثر الاستفسارات شيوعاً لدى عملائنا في المعادي والمناطق المجارة لها.</p>
         </div>
 
-        <div class="area-tags">
-
-            <span>المعادي</span>
-            <span>حدائق المعادي</span>
-            <span>زهراء المعادي</span>
-            <span>دجلة</span>
-            <span>صقر قريش</span>
-            <span>البساتين</span>
-            <span>دار السلام</span>
-
-        </div>
-
-    </section>
-
-    <section class="container">
-
-        <div class="section-title">
-            <h2>أسئلة شائعة عن صيانة الشاشات</h2>
-        </div>
-
-        <div class="faq">
-
+        <div class="faq-grid">
             <div class="faq-item">
-                <h3>هل يتم تركيب الشاشة على الحائط؟</h3>
-                <p>
-                    نعم، حمزاوي سات يقدم خدمة تركيب شاشات الحائط وتنظيم
-                    التوصيلات حسب مكان الشاشة.
-                </p>
+                <div class="faq-question">
+                    <span>هل تقدمون ضماناً على تغيير ليدات الشاشات في المعادي؟</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    نعم بالتأكيد، كافة أعمال تغيير ليدات الشاشات لدينا تأتي مع ضمان معتمد لضمان جودة الإضاءة وعمرها الافتراضي.
+                </div>
             </div>
 
             <div class="faq-item">
-                <h3>الشاشة تعمل والصوت موجود لكن الصورة غير موجودة هل يمكن صيانتها؟</h3>
-                <p>
-                    يتم فحص الشاشة وتحديد سبب المشكلة، وقد يكون العطل متعلقاً
-                    بالإضاءة الخلفية أو أحد أجزاء دائرة الصورة حسب الحالة.
-                </p>
+                <div class="faq-question">
+                    <span>ما هي سرعة وصول فني الشاشات لمنطقة المعادي؟</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    نصلك عادةً خلال 30 إلى 45 دقيقة من تأكيد الطلب داخل المعادي، حدائق المعادي، وزهراء المعادي، نظراً لتواجد فنيينا بشكل دائم في هذه المناطق.
+                </div>
             </div>
 
             <div class="faq-item">
-                <h3>هل يمكن فحص الشاشة قبل تحديد الصيانة المطلوبة؟</h3>
-                <p>
-                    نعم، يتم فحص الأعراض والتوصيلات وتحديد نوع المشكلة
-                    قبل تنفيذ أعمال الصيانة المناسبة.
-                </p>
+                <div class="faq-question">
+                    <span>الشاشة تفصل لوحدها بعد فترة من التشغيل، هل يمكن صيانتها؟</span>
+                    <i class="fa-solid fa-chevron-down"></i>
+                </div>
+                <div class="faq-answer">
+                    نعم، هذه المشكلة غالباً ما تكون مرتبطة بدائرة الباور أو السخونة الزائدة. يمكننا فحص الشاشة وتحديد العطل الدقيق وصيانته باحترافية.
+                </div>
             </div>
-
-            <div class="faq-item">
-                <h3>هل الخدمة متاحة في المعادي؟</h3>
-                <p>
-                    نعم، الخدمة متاحة في المعادي وحدائق المعادي وزهراء المعادي
-                    ودجلة وصقر قريش والبساتين ودار السلام.
-                </p>
-            </div>
-
         </div>
-
     </section>
 
-    <section class="cta">
-
-        <h2>عندك مشكلة في الشاشة؟</h2>
-
-        <p>
-            تواصل مع حمزاوي سات للاستفسار عن تركيب أو صيانة الشاشة
-        </p>
-
-        <div class="buttons">
-
-            <a class="btn btn-primary"
-               href="https://wa.me/201152822263?text=عايز%20استفسر%20عن%20صيانة%20الشاشة"
-               target="_blank">
-                تواصل واتساب
-            </a>
-
-            <a class="btn btn-dark" href="tel:+201152822263">
-                اتصال مباشر
-            </a>
-
+    <!-- CTA Section -->
+    <section class="section">
+        <div class="cta-section">
+            <h2>هل تواجه مشكلة في صورة أو إضاءة الشاشة؟</h2>
+            <p>تواصل مع فني شاشات حمزاوي سات في المعادي الآن للاستفسار أو طلب الخدمة الفورية بدقة واحترافية.</p>
+            <div class="hero-btns">
+                <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-phone"></i> اطلب فني شاشات</a>
+                <a href="https://wa.me/201152822263?text=أحتاج%20فني%20شاشات%20في%20منطقة%20المعادي" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+            </div>
+            <a href="index.html" class="back-home">← الرجوع للصفحة الرئيسية</a>
         </div>
-
-        <a class="back-home" href="index.html">
-            ← الرجوع إلى الصفحة الرئيسية
-        </a>
-
     </section>
 
+    <!-- Footer -->
     <footer>
-
-        <div>
-            حمزاوي سات لتركيب وصيانة الشاشات
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4><i class="fa-solid fa-satellite-dish" style="color: var(--secondary);">
+                </i> حمزاوي سات (فرع المعادي)</h4>
+                <p>المركز المتخصص في خدمات صيانة وتركيب الدش، أنظمة المراقبة الحديثة، وصيانة الشاشات والرسيفر في المعادي والمناطق المحيطة.</p>
+            </div>
+            <div class="footer-col">
+                <h4>روابط سريعة</h4>
+                <ul>
+                    <li><a href="dish.html"><i class="fa-solid fa-chevron-left"></i> فني دش المعادي</a></li>
+                    <li><a href="camera.html"><i class="fa-solid fa-chevron-left"></i> كاميرات مراقبة المعادي</a></li>
+                    <li><a href="tv.html"><i class="fa-solid fa-chevron-left"></i> صيانة شاشات المعادي</a></li>
+                    <li><a href="receiver.html"><i class="fa-solid fa-chevron-left"></i> صيانة رسيفر المعادي</a></li>
+                </ul>
+            </div>
+            <div class="footer-col" id="contact">
+                <h4>تواصل معنا</h4>
+                <p><i class="fa-solid fa-phone"></i> الهاتف: <a href="tel:01152822263">01152822263</a></p>
+                <p><i class="fa-brands fa-whatsapp"></i> الواتساب: <a href="https://wa.me/201152822263" target="_blank">01152822263</a></p>
+                <p><i class="fa-solid fa-clock"></i> مواعيد العمل: يومياً من 12:30 ظهراً</p>
+            </div>
         </div>
-
-        <div>
-            مواعيد العمل: يومياً من 12:30 ظهراً حتى 11 مساءً
+        <div class="footer-bottom">
+            <p>جميع الحقوق محفوظة © مركز حمزاوي سات - فرع المعادي 2026</p>
         </div>
-
-        <div>
-            الهاتف: 01152822263
-        </div>
-
-        <a class="back-home" href="index.html">
-            الصفحة الرئيسية
-        </a>
-
     </footer>
 
+    <!-- Floating WhatsApp -->
+    <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20شاشات%20في%20منطقة%20المعادي%20من%20حمزاوي%20سات" class="floating-whatsapp" target="_blank" title="تواصل فوراً عبر الواتساب">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <script>
+        // كود لتشغيل الـ Accordion في الأسئلة الشائعة
+        document.querySelectorAll('.faq-question').forEach(item => {
+            item.addEventListener('click', () => {
+                const parent = item.parentElement;
+                parent.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>
