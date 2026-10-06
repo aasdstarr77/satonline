@@ -4,57 +4,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- === سيو (SEO) محلي مخصص لخدمات الدش في المعادي === -->
-    <title>فني دش المعادي | تركيب وصيانة أطباق الدش وضبط الإشارة - حمزاوي سات</title>
-    <meta name="description" content="حمزاوي سات: أفضل فني دش في المعادي لتركيب وصيانة أطباق الدش، ضبط إشارة Nilesat، برمجة الرسيفر، وتمديد الكابلات. خدمة سريعة وضمان معتمد في المعادي، حدائق المعادي، وزهراء المعادي.">
-    <meta name="keywords" content="فني دش المعادي، صيانة دش المعادي، تركيب دش المعادي، ضبط إشارة دش المعادي، برمجة رسيفر المعادي، فني ستالايت حدائق المعادي، صيانة دش زهراء المعادي، فني دش دجلة">
+    <!-- === SEO الرئيسي المخصص لخدمات الدش === -->
+    <title>فني دش المعادي والمهندسين | تركيب وصيانة أطباق الدش وضبط الإشارة - حمزاوي سات</title>
+    <meta name="description" content="حمزاوي سات: أفضل فني دش في القاهرة والجيزة (المعادي والمهندسين) لتركيب وصيانة أطباق الدش، ضبط إشارة Nilesat، برمجة الرسيفر، وتمديد الكابلات. خدمة سريعة وضمان معتمد.">
+    <meta name="keywords" content="فني دش المعادي, فني دش المهندسين, صيانة دش القاهرة والجيزة, تركيب دش, ضبط إشارة Nilesat, برمجة رسيفر, حمزاوي سات دش">
     <meta name="robots" content="index, follow">
 
-    <!-- كود الـ Canonical لمنع التكرار -->
+    <!-- رابط Canonical المحدث -->
     <link rel="canonical" href="https://aasdstarr77.github.io/satonline/dish.html">
 
-    <!-- === سيو جامد: بيانات منظمة لخدمات الدش في المعادي (Schema) === -->
+    <!-- === بيانات Schema منظمة ومعتمدة === -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "حمزاوي سات لخدمات الدش - فرع المعادي",
-      "image": "https://images.unsplash.com/photo-1620211155986-13d80b555512?q=80&w=400",
+      "@id": "https://aasdstarr77.github.io/satonline/#business",
+      "name": "حمزاوي سات لخدمات الدش والستالايت",
+      "image": "https://images.unsplash.com/photo-1620211155986-13d80b555512?q=80&w=1200",
       "telephone": "+201152822263",
       "url": "https://aasdstarr77.github.io/satonline/dish.html",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "المعادي - القاهرة",
-        "addressLocality": "المعادي، القاهرة",
+        "addressLocality": "المعادي",
+        "addressRegion": "القاهرة",
         "addressCountry": "EG"
       },
-      "servesCrawl": [
-        "المعادي",
-        "حدائق المعادي",
-        "زهراء المعادي",
-        "دجلة",
-        "بولاق الدكرور"
+      "areaServed": [
+        { "@type": "City", "name": "القاهرة" },
+        { "@type": "City", "name": "الجيزة" },
+        { "@type": "Place", "name": "المعادي" },
+        { "@type": "Place", "name": "المهندسين" }
       ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "12:30",
         "closes": "23:00"
-      }
+      },
+      "sameAs": [
+        "https://youtube.com/@hmzawysat",
+        "https://cezma.com/store/hmzawysat",
+        "https://maps.app.goo.gl/4jS7f2czyFvnYyLSA"
+      ]
     }
     </script>
 
-    <!-- Font Awesome Icons -->
+    <!-- External CSS Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Cairo -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     
     <style>
@@ -67,6 +63,7 @@
             --gray: #64748b;
             --border: #e2e8f0;
             --whatsapp: #22c55e;
+            --maps: #ea4335;
         }
 
         * {
@@ -81,6 +78,8 @@
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
+            direction: rtl;
+            text-align: right;
         }
 
         /* Top Bar */
@@ -92,11 +91,12 @@
             justify-content: space-between;
             align-items: center;
             font-size: 0.9rem;
+            gap: 10px;
         }
         .top-info span { margin-left: 15px; }
         .top-info i { color: var(--secondary); margin-left: 5px; }
 
-        /* === Header Navigation: القائمة الكاملة والاحترافية === */
+        /* Header Navigation */
         header {
             background: #ffffff;
             box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
@@ -110,7 +110,7 @@
             justify-content: space-between;
             align-items: center;
             padding: 15px 5%;
-            max-width: 1300px;
+            max-width: 1200px;
             margin: 0 auto;
         }
 
@@ -128,64 +128,72 @@
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 12px;
+            gap: 15px;
             align-items: center;
         }
         .nav-links a {
             text-decoration: none;
             color: var(--dark);
             font-weight: 600;
-            font-size: 0.9rem;
+            font-size: 0.95rem;
             transition: color 0.3s;
             display: flex;
             align-items: center;
-            gap: 4px;
+            gap: 5px;
         }
         .nav-links a:hover, .nav-links a.active { color: var(--primary); }
-        .nav-links a i { color: var(--gray); font-size: 0.9rem; transition: color 0.3s; }
-        .nav-links a:hover i, .nav-links a.active i { color: var(--primary); }
 
         .cta-btn-nav {
             background-color: var(--primary);
             color: #fff;
-            padding: 8px 16px;
+            padding: 8px 18px;
             border-radius: 8px;
             text-decoration: none;
             font-weight: 700;
             transition: background 0.3s;
-            font-size: 0.85rem;
         }
         .cta-btn-nav:hover { background-color: var(--primary-dark); }
 
-        /* Hero Section المخصص للدش */
+        /* Hero Section */
         .hero {
             background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(3, 105, 161, 0.88)), 
                         url('https://images.unsplash.com/photo-1620211155986-13d80b555512?q=80&w=1200') center/cover;
             color: #fff;
-            padding: 120px 5% 90px;
+            padding: 100px 5% 80px;
             text-align: center;
         }
-        .hero-content { max-width: 850px; margin: 0 auto; }
-        .hero h1 { font-size: 2.6rem; font-weight: 900; margin-bottom: 15px; line-height: 1.2; }
+        .hero-content { max-width: 900px; margin: 0 auto; }
+        .badge {
+            background-color: var(--secondary);
+            color: var(--dark);
+            padding: 6px 16px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .hero h1 { font-size: 2.5rem; font-weight: 900; margin-bottom: 15px; line-height: 1.3; }
         .hero p { font-size: 1.2rem; margin-bottom: 30px; opacity: 0.95; }
         .hero-btns { display: flex; gap: 15px; justify-content: center; flex-wrap: wrap; }
-        .btn { padding: 12px 28px; border-radius: 8px; font-weight: 700; font-size: 1.1rem; text-decoration: none; display: inline-flex; align-items: center; gap: 10px; transition: transform 0.2s, box-shadow 0.2s; }
-        .btn:hover { transform: translateY(-2px); box-shadow: 0 6px 15px rgba(0,0,0,0.2); }
+        .btn { padding: 12px 24px; border-radius: 8px; font-weight: 700; font-size: 1rem; text-decoration: none; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s, opacity 0.2s; }
+        .btn:hover { transform: translateY(-2px); opacity: 0.95; }
         .btn-call { background-color: var(--primary); color: #fff; }
         .btn-whatsapp { background-color: var(--whatsapp); color: #fff; }
+        .btn-maps { background-color: var(--maps); color: #fff; }
 
         /* Section Commons */
-        .section { padding: 80px 5%; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; margin-bottom: 50px; }
-        .section-title h2 { font-size: 2.2rem; font-weight: 800; color: var(--dark); position: relative; display: inline-block; }
+        .section { padding: 70px 5%; max-width: 1200px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 45px; }
+        .section-title h2 { font-size: 2rem; font-weight: 800; color: var(--dark); position: relative; display: inline-block; }
         .section-title h2::after { content: ''; display: block; width: 60%; height: 4px; background: var(--secondary); margin: 8px auto 0; border-radius: 2px; }
-        .section-title p { color: var(--gray); margin-top: 12px; font-size: 1.1rem; }
+        .section-title p { color: var(--gray); margin-top: 10px; }
 
         /* Dish Services Grid */
         .dish-services-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
         }
         .dish-card {
             background: #fff;
@@ -197,35 +205,61 @@
             flex-direction: column;
             padding: 25px;
         }
-        .dish-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.08); }
-        .dish-card i { font-size: 2.5rem; color: var(--primary); margin-bottom: 15px; }
-        .dish-card h3 { font-size: 1.4rem; margin-bottom: 10px; color: var(--dark); }
+        .dish-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.08); }
+        .dish-card i.main-icon { font-size: 2.3rem; color: var(--primary); margin-bottom: 15px; }
+        .dish-card h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--dark); }
         .dish-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 15px; flex-grow: 1; }
         .dish-features { list-style: none; border-top: 1px solid var(--border); padding-top: 15px; }
         .dish-features li { font-size: 0.9rem; color: var(--dark); margin-bottom: 8px; display: flex; align-items: center; gap: 8px; }
-        .dish-features li i { color: var(--whatsapp); font-size: 0.9rem; }
+        .dish-features li i { color: var(--whatsapp); }
 
-        /* areas Section المخصصة للمعادي */
-        .areas-section { background-color: #fff; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); }
-        .areas-grid { display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; max-width: 900px; margin: 0 auto; }
-        .area-tag { background: var(--light); color: var(--dark); padding: 10px 22px; border-radius: 30px; font-weight: 700; font-size: 0.95rem; border: 1px solid var(--border); transition: all 0.3s; }
-        .area-tag:hover { background: var(--primary); color: #fff; border-color: var(--primary); transform: translateY(-2px); }
+        /* Features Bar */
+        .features-bar {
+            background: #fff;
+            padding: 25px 5%;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            max-width: 1100px;
+            margin: 0 auto;
+            border-radius: 12px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            text-align: center;
+        }
+        .feature-item i { font-size: 1.8rem; color: var(--primary); margin-bottom: 8px; }
+        .feature-item h4 { font-size: 1.1rem; font-weight: 700; }
+        .feature-item p { font-size: 0.85rem; color: var(--gray); }
 
-        /* FAQ Section المخصصة للدش */
-        .faq-grid { max-width: 850px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
+        /* Guarantee Box */
+        .guarantee-box {
+            background: linear-gradient(135deg, #0284c7, #0f172a);
+            color: #fff;
+            border-radius: 15px;
+            padding: 40px 30px;
+            margin: 40px auto 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .guarantee-text h3 { font-size: 1.6rem; margin-bottom: 8px; }
+        .guarantee-text p { opacity: 0.9; }
+
+        /* FAQ Section */
+        .faq-grid { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
         .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
-        .faq-question { padding: 18px 25px; font-weight: 700; font-size: 1.1rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; transition: background 0.3s; }
-        .faq-question:hover { background: #fafafa; }
-        .faq-answer { padding: 0 25px 20px; color: var(--gray); font-size: 1rem; display: none; border-top: 1px solid var(--border); padding-top: 15px; }
+        .faq-question { padding: 15px 20px; font-weight: 700; font-size: 1.05rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; background: #fff; }
+        .faq-answer { padding: 0 20px 15px; color: var(--gray); font-size: 0.95rem; display: none; border-top: 1px solid var(--border); padding-top: 12px; }
         .faq-item.active .faq-answer { display: block; }
         .faq-question i { transition: transform 0.3s; color: var(--gray); }
         .faq-item.active .faq-question i { transform: rotate(180deg); color: var(--primary); }
 
         /* CTA Section */
-        .cta-section { background: linear-gradient(135deg, var(--primary), var(--dark)); color: #fff; padding: 70px 5%; text-align: center; border-radius: 15px; max-width: 1000px; margin: 40px auto; }
-        .cta-section h2 { font-size: 2.2rem; margin-bottom: 15px; }
-        .cta-section p { font-size: 1.1rem; margin-bottom: 30px; opacity: 0.9; }
-        .back-home { display: inline-block; margin-top: 25px; color: var(--secondary); text-decoration: none; font-weight: 700; font-size: 0.95rem; }
+        .cta-section { background: linear-gradient(135deg, var(--primary), var(--dark)); color: #fff; padding: 50px 5%; text-align: center; border-radius: 15px; max-width: 1000px; margin: 40px auto 0; }
+        .cta-section h2 { font-size: 2rem; margin-bottom: 12px; }
+        .cta-section p { font-size: 1rem; margin-bottom: 25px; opacity: 0.9; }
+        .back-home { display: inline-block; margin-top: 20px; color: var(--secondary); text-decoration: none; font-weight: 700; font-size: 0.95rem; }
         .back-home:hover { text-decoration: underline; }
 
         /* Floating WhatsApp Button */
@@ -233,238 +267,272 @@
         .floating-whatsapp:hover { transform: scale(1.1); }
 
         /* Footer */
-        footer { background-color: var(--dark); color: #fff; padding: 60px 5% 20px; margin-top: 50px; }
-        .footer-content { max-width: 1300px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 40px; margin-bottom: 40px; }
-        .footer-col h4 { font-size: 1.25rem; margin-bottom: 20px; color: var(--secondary); }
-        .footer-col p, .footer-col li { color: #94a3b8; font-size: 0.95rem; margin-bottom: 12px; }
+        footer { background-color: var(--dark); color: #fff; padding: 50px 5% 20px; margin-top: 50px; }
+        .footer-content { max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 30px; margin-bottom: 30px; }
+        .footer-col h4 { font-size: 1.2rem; margin-bottom: 15px; color: var(--secondary); }
+        .footer-col p, .footer-col li { color: #94a3b8; font-size: 0.95rem; margin-bottom: 10px; }
         .footer-col ul { list-style: none; }
-        .footer-col a { color: #94a3b8; text-decoration: none; transition: color 0.3s; display: flex; align-items: center; gap: 8px; }
+        .footer-col a { color: #94a3b8; text-decoration: none; transition: color 0.3s; }
         .footer-col a:hover { color: #fff; }
-        .footer-col a i { font-size: 0.85rem; }
-        .footer-bottom { text-align: center; border-top: 1px solid #1e293b; padding-top: 25px; color: #64748b; font-size: 0.85rem; }
+        .footer-maps-btn { display: inline-flex; align-items: center; gap: 8px; background-color: var(--maps); color: #fff !important; padding: 8px 16px; border-radius: 6px; font-weight: 700; font-size: 0.9rem; margin-top: 8px; }
+        .footer-bottom { text-align: center; border-top: 1px solid #1e293b; padding-top: 20px; color: #64748b; font-size: 0.85rem; }
 
-        @media (max-width: 992px) {
-            .nav-links { display: none; }
-            .hero h1 { font-size: 2.1rem; }
-        }
         @media (max-width: 768px) {
-            .hero { padding: 90px 5% 60px; }
+            .nav-links { display: none; }
+            .top-bar { flex-direction: column; text-align: center; }
             .hero h1 { font-size: 1.8rem; }
-            .section-title h2 { font-size: 1.8rem; }
-            .dish-services-grid { grid-template-columns: 1fr; }
+            .hero p { font-size: 1rem; }
+            .hero-btns { flex-direction: column; }
+            .btn { width: 100%; justify-content: center; }
+            .guarantee-box { text-align: center; justify-content: center; }
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Bar -->
+    <!-- الشريط العلوي -->
     <div class="top-bar">
         <div class="top-info">
-            <span><i class="fa-solid fa-location-dot"></i> المعادي، حدائق المعادي، زهراء المعادي، ودجلة</span>
+            <span><i class="fa-solid fa-location-dot"></i> القاهرة والجيزة والمناطق المحيطة</span>
+            <span><i class="fa-solid fa-store"></i> المقر الرئيسي: المعادي | فرع المهندسين</span>
             <span><i class="fa-solid fa-clock"></i> يومياً من 12:30 ظهراً حتى 11 مساءً</span>
         </div>
         <div>
-            <span><i class="fa-solid fa-shield-halved"></i> ضمان حقيقي على كافة خدمات الدش</span>
+            <span><i class="fa-solid fa-shield-halved"></i> ضمان حقيقي على كافة الخدمات</span>
         </div>
     </div>
 
-    <!-- === Header Navigation: القائمة الكاملة مع رابط الصفحة الرئيسية === -->
+    <!-- الهيدر Navigation -->
     <header>
         <div class="nav-container">
             <a href="index.html" class="logo">
-                <i class="fa-solid fa-satellite-dish"></i> حمزاوي سات <span style="font-size: 0.8rem; font-weight:400;">(فرع المعادي)</span>
+                <i class="fa-solid fa-satellite-dish"></i> حمزاوي سات
             </a>
             <ul class="nav-links">
-                <!-- رابط "الصفحة الرئيسية" مع أيقونة -->
                 <li><a href="index.html"><i class="fa-solid fa-house"></i> الرئيسية</a></li>
-                
                 <li><a href="dish.html" class="active"><i class="fa-solid fa-satellite"></i> خدمات الدش</a></li>
                 <li><a href="cameras.html"><i class="fa-solid fa-video"></i> كاميرات المراقبة</a></li>
                 <li><a href="tv.html"><i class="fa-solid fa-tv"></i> صيانة الشاشات</a></li>
                 <li><a href="receiver.html"><i class="fa-solid fa-box"></i> صيانة الرسيفر</a></li>
-                <li><a href="https://cezma.com/store/hmzawysat" target="_blank"><i class="fa-solid fa-store"></i> المتجر</a></li>
+                <li><a href="https://cezma.com/store/hmzawysat" target="_blank" rel="noopener"><i class="fa-solid fa-store"></i> المتجر</a></li>
             </ul>
             <a href="tel:01152822263" class="cta-btn-nav"><i class="fa-solid fa-phone"></i> اطلب فني دش</a>
         </div>
     </header>
 
-    <!-- Hero Section المخصص للدش -->
+    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
-            <span class="badge"><i class="fa-solid fa-medal"></i> أفضل خدمات الدش والستالايت في المعادي</span>
-            <h1>فني دش المعادي لتركيب وصيانة وضبط إشارة Nilesat 4K</h1>
-            <p>نصلك أينما كنت في المعادي والمناطق المحيطة خلال 30 دقيقة! فني دش متخصص لتركيب الأطباق، ضبط الإشارة بدقة، تمديد الكابلات، وبرمجة الرسيفر بضمان معتمد.</p>
+            <span class="badge"><i class="fa-solid fa-star"></i> أفضل خدمات الدش والستالايت في القاهرة والجيزة</span>
+            <h1>فني دش متناول اليد لتركيب وصيانة وضبط إشارة Nilesat 4K</h1>
+            <p>نخدم المعادي، المهندسين، وكافة مناطق القاهرة والجيزة! تركيب الأطباق، ضبط الإشارة بدقة بـ أحدث أجهزة السات فايندر، تمديد الأسلاك، وبرمجة الرسيفرات بضمان معتمد.</p>
             <div class="hero-btns">
-                <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-phone-volume"></i> اطلب فني دش فوري</a>
-                <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20دش%20في%20منطقة%20المعادي%20من%20حمزاوي%20سات" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
+                <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-phone-volume"></i> اطلب الفني الآن</a>
+                <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20دش%20من%20حمزاوي%20سات" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
+                <a href="https://maps.app.goo.gl/4jS7f2czyFvnYyLSA" class="btn btn-maps" target="_blank" rel="noopener"><i class="fa-solid fa-map-location-dot"></i> موقعنا على الخريطة</a>
             </div>
         </div>
     </section>
 
-    <!-- Dish Services Section -->
+    <!-- الخدمات التفصيلية للدش -->
     <section class="section" id="dish-services">
         <div class="section-title">
-            <h2>أفضل خدمات فني دش في المعادي</h2>
-            <p>حلول متكاملة لتركيب وصيانة أجهزة الستالايت بدقة واحترافية عالية</p>
+            <h2>خدمات تركيب وصيانة الدش والستالايت</h2>
+            <p>حلول متكاملة لتركيب وصيانة أجهزة الستالايت والدش الفردي والمركزى بدقة واحترافية</p>
         </div>
 
         <div class="dish-services-grid">
-            <!-- Service 1: ضبط الإشارة -->
+            <!-- الخدمة 1 -->
             <div class="dish-card">
-                <i class="fa-solid fa-signal"></i>
-                <h3>ضبط إشارة دش المعادي 4K</h3>
-                <p>ضبط إشارة Nilesat وكافة الأقمار بأحدث أجهزة القياس الرقمية، لحل مشاكل تقطيع الصورة واختفاء القنوات بضمان أعلى جودة.</p>
+                <i class="fa-solid fa-signal main-icon"></i>
+                <h3>ضبط الإشارة بأحدث الأجهزة 4K</h3>
+                <p>ضبط إشارة Nilesat وكافة الأقمار بأحدث أجهزة السات فايندر الرقمية، لحل كافة مشاكل تقطيع الصورة أو اختفاء القنوات نهائياً.</p>
                 <ul class="dish-features">
                     <li><i class="fa-solid fa-circle-check"></i> ضبط إشارة Nilesat بدقة عالية</li>
-                    <li><i class="fa-solid fa-circle-check"></i> حل مشاكل التقطيع في قنوات 4K/HD</li>
-                    <li><i class="fa-solid fa-circle-check"></i> ضمان على جودة الإشارة</li>
+                    <li><i class="fa-solid fa-circle-check"></i> علاج تقطيع قنوات HD / 4K</li>
+                    <li><i class="fa-solid fa-circle-check"></i> ضمان على جودة واستقرار الإشارة</li>
                 </ul>
             </div>
 
-            <!-- Service 2: تركيب الدش -->
+            <!-- الخدمة 2 -->
             <div class="dish-card">
-                <i class="fa-solid fa-satellite"></i>
-                <h3>تركيب دش المعادي والمناطق المحيطة</h3>
-                <p>تركيب كافة أنواع أطباق الدش (ثابتة ومتحركة)، وتثبيتها باحترافية على الأسطح أو الحوائط، مع اختيار أنسب مكان لضمان أفضل استقبال.</p>
+                <i class="fa-solid fa-satellite main-icon"></i>
+                <h3>تركيب أطباق الدش (فردي ومركزي)</h3>
+                <p>تركيب كافة أنواع وأحجام أطباق الدش، وتثبيتها باحترافية وأمان على الواجهات أو الأسطح لضمان مقاومة للرياح والعوامل الجوية.</p>
                 <ul class="dish-features">
-                    <li><i class="fa-solid fa-circle-check"></i> تركيب دش مركزي وفردي</li>
-                    <li><i class="fa-solid fa-circle-check"></i> تثبيت آمن ومقاوم للعوامل الجوية</li>
-                    <li><i class="fa-solid fa-circle-check"></i> تركيب دايزك (DiSEqC) لدمج الأقمار</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تركيب دش فردي ومركزي للعمارات</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تثبيت آمن ومقاوم للظروف الجوية</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تركيب الدايزك (DiSEqC) لدمج الأقمار</li>
                 </ul>
             </div>
 
-            <!-- Service 3: تمديد الكابلات -->
+            <!-- الخدمة 3 -->
             <div class="dish-card">
-                <i class="fa-solid fa-network-wired"></i>
-                <h3>تمديد كابلات الدش بالمعادي</h3>
-                <p>تمديد وتغيير كابلات الدش القديمة والتالفة بكابلات جديدة عالية الجودة، مع تقفيل احترافي ومنظم للأسلاك للحفاظ على مظهر نظيف.</p>
+                <i class="fa-solid fa-network-wired main-icon"></i>
+                <h3>تمديد وتغيير كابلات الدش</h3>
+                <p>تغيير وتمديد كابلات الدش القديمة والتالفة بأسلاك أصلية نحاسية عالية الجودة، مع تقفيل وتنظيم احترافي للمظهر الخارجي والداخلي.</p>
                 <ul class="dish-features">
-                    <li><i class="fa-solid fa-circle-check"></i> كابلات دش أصلية ومقاومة للحرارة</li>
-                    <li><i class="fa-solid fa-circle-check"></i> تقفيل الأسلاك بدقة ومظهر نظيف</li>
-                    <li><i class="fa-solid fa-circle-check"></i> حل مشاكل ضعف الإشارة بسبب الكابلات</li>
+                    <li><i class="fa-solid fa-circle-check"></i> كابلات نحاسية عالية الجودة</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تقفيل وتنظيم الأسلاك بالكلبسات</li>
+                    <li><i class="fa-solid fa-circle-check"></i> التخلص من التشويش وفقدان الإشارة</li>
                 </ul>
             </div>
 
-            <!-- Service 4: برمجة الرسيفر -->
+            <!-- الخدمة 4 -->
             <div class="dish-card">
-                <i class="fa-solid fa-box-open"></i>
-                <h3>برمجة وتحديث رسيفر المعادي</h3>
-                <p>تنزيل أحدث ملفات القنوات وترتيبها حسب رغبتك، وتحديث السوفت وير للرسيفر، وحل مشاكل التهنيج وتوقف الجهاز.</p>
+                <i class="fa-solid fa-sliders main-icon"></i>
+                <h3>برمجة وترتيب القنوات</h3>
+                <p>تنزيل أحدث ملفات القنوات والترددات الجديدة، وترتيب القنوات بشكل منظم (عربي، أطفال، رياضة، أخبار) بحسب طلب العميل.</p>
                 <ul class="dish-features">
-                    <li><i class="fa-solid fa-circle-check"></i> تنزيل أحدث القنوات العربية والأجنبية</li>
-                    <li><i class="fa-solid fa-circle-check"></i> ترتيب القنوات بشكل منظم</li>
-                    <li><i class="fa-solid fa-circle-check"></i> تحديث سوفت وير الرسيفر</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تنزيل الترددات والقنوات الجديدة</li>
+                    <li><i class="fa-solid fa-circle-check"></i> ترتيب القنوات بقوائم مفضلة</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تحديث السوفت وير للرسيفر</li>
                 </ul>
             </div>
         </div>
+
+        <!-- صندوق الضمان -->
+        <div class="guarantee-box">
+            <div class="guarantee-text">
+                <h3><i class="fa-solid fa-shield-heart"></i> ضمان حقيقي من حمزاوي سات</h3>
+                <p>كافة التركيبات وقطع الغيار وكابلات الدش تأتي بضمان معتمد مع دعم وصيانة سريعة داخل القاهرة والجيزة.</p>
+            </div>
+            <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-headset"></i> تواصل معنا الآن</a>
+        </div>
     </section>
 
-    <!-- areas Section المخصصة للمعادي -->
-    <section class="section areas-section" id="mohandessin">
+    <!-- مناطق تغطية الخدمة -->
+    <section class="section" style="padding-top: 0;">
         <div class="section-title">
-            <h2>مناطق تغطية فني دش المعادي</h2>
-            <p>نقدم خدماتنا التقنية السريعة والاحترافية في كافة أحياء المعادي والمناطق المجاورة لها.</p>
+            <h2>مناطق الخدمة والتغطية</h2>
+            <p>نصلك في أسرع وقت في كافة أحياء القاهرة والجيزة من خلال مقراتنا</p>
         </div>
-        <div class="areas-grid">
-            <span class="area-tag"># المعادي</span>
-            <span class="area-tag"># حدائق المعادي</span>
-            <span class="area-tag"># زهراء المعادي</span>
-            <span class="area-tag"># دجلة</span>
-            <span class="area-tag"># البساتين</span>
-            <span class="area-tag"># دار السلام</span>
-            <span class="area-tag"># صقر قريش</span>
+        <div class="features-bar">
+            <div class="feature-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>المعادي وضواحيها</h4>
+                <p>زهراء المعادي، حدائق المعادي، دجلة، والبساتين</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>المهندسين والجيزة</h4>
+                <p>الدقي، العجوزة، الزمالك، وإمبابة</p>
+            </div>
+            <div class="feature-item">
+                <i class="fa-solid fa-location-dot"></i>
+                <h4>أحياء القاهرة</h4>
+                <p>مصر القديمة، المقطم، مدينة نصر، والتجمع</p>
+            </div>
         </div>
     </section>
 
-    <!-- Dish FAQ Section المخصصة للدش في المعادي -->
+    <!-- الأسئلة الشائعة FAQ -->
     <section class="section" id="faq">
         <div class="section-title">
-            <h2>الأسئلة الشائعة حول خدمات الدش في المعادي</h2>
-            <p>إجابات فورية على أكثر الاستفسارات شيوعاً لدى عملائنا في المعادي والمناطق المجارة لها.</p>
+            <h2>أسئلة شائعة عن خدمات الدش</h2>
+            <p>إجابات فورية على الاستفسارات الأكثر شيوعاً بين العملاء</p>
         </div>
 
         <div class="faq-grid">
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>ما هي سرعة وصول فني الدش لمنطقة المعادي؟</span>
+                    <span>ما هي سرعة وصول الفني للعميل؟</span>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    نصلك عادةً خلال 30 إلى 45 دقيقة من تأكيد الطلب داخل المعادي، المناطق المجاوره نظراً لتواجد فنيينا بشكل دائم في هذه المناطق.
+                    نصلك عادة خلال 30 إلى 60 دقيقة من تأكيد الطلب داخل مناطق المعادي والمهندسين وأحياء القاهرة والجيزة المجاورة.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>هل تقدمون ضماناً على خدمات ضبط الإشارة؟</span>
+                    <span>هل تقدمون خدمة تركيب الدش المركزي؟</span>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    نعم بالتأكيد، كافة خدمات ضبط الإشارة لدينا تأتي مع ضمان لضمان جودة واستقرار استقبال Nilesat وكافة الأقمار.
+                    نعم، متخصصون في تصميم وتركيب شبكات الدش المركزي للعمارات، المجمعات السكنية، الشركات، والفنادق بأعلى معايير الجودة.
                 </div>
             </div>
 
             <div class="faq-item">
                 <div class="faq-question">
-                    <span>هل يمكنني طلب تركيب دش مركزي للإنشاءات الجديدة في المعادي؟</span>
+                    <span>هل يوجد ضمان على خدمات ضبط الإشارة والتركيب؟</span>
                     <i class="fa-solid fa-chevron-down"></i>
                 </div>
                 <div class="faq-answer">
-                    نعم، نحن متخصصون في تصميم وتركيب أنظمة الدش المركزي (Central Dish) للعمارات والشركات في المعادي، بأسعار تنافسية وجودة عالية.
+                    بالتأكيد، جميع خدماتنا ومكونات الشبكة المعروضة تأتي بضمان معتمد يضمن لك استقرار الإشارة وعدم التقطيع.
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="section">
+    <!-- Call to Action -->
+    <section class="section" style="padding-top: 0;">
         <div class="cta-section">
-            <h2>هل تواجه مشكلة في إشارة الدش؟</h2>
-            <p>تواصل مع فني دش حمزاوي سات في المعادي الآن للاستفسار أو طلب الخدمة الفورية بدقة واحترافية.</p>
+            <h2>هل تواجه مشكلة في إشارة الدش أو القنوات؟</h2>
+            <p>تواصل مع فني حمزاوي سات الآن ليصلك أفضل مهندس ستالايت في القاهرة والجيزة بضمان وجودة فائقة.</p>
             <div class="hero-btns">
                 <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-phone"></i> اطلب فني دش</a>
-                <a href="https://wa.me/201152822263?text=أحتاج%20فني%20دش%20في%20منطقة%20المعادي" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
+                <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20دش%20من%20حمزاوي%20سات" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> واتساب</a>
             </div>
-            <a href="index.html" class="back-home">← الرجوع للصفحة الرئيسية</a>
+            <div>
+                <a href="index.html" class="back-home">← العودة للصفحة الرئيسية</a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-content">
-            <div class="footer-col">
-                <h4><i class="fa-solid fa-satellite-dish" style="color: var(--secondary);">
-                </i> حمزاوي سات (فرع المعادي)</h4>
-                <p>المركز المتخصص في خدمات صيانة وتركيب الدش، أنظمة المراقبة الحديثة، وصيانة الشاشات والرسيفر في المعادي والمناطق المحيطة.</p>
-            </div>
-            <div class="footer-col">
-                <h4>روابط سريعة</h4>
-                <ul>
-                    <li><a href="dish.html"><i class="fa-solid fa-chevron-left"></i> فني دش المعادي</a></li>
-                    <li><a href="cameras.html"><i class="fa-solid fa-chevron-left"></i> كاميرات مراقبة المعادي</a></li>
-                    <li><a href="tv.html"><i class="fa-solid fa-chevron-left"></i> صيانة شاشات المعادي</a></li>
-                    <li><a href="receiver.html"><i class="fa-solid fa-chevron-left"></i> صيانة رسيفر المعادي</a></li>
-                </ul>
-            </div>
-            <div class="footer-col" id="contact">
-                <h4>تواصل معنا</h4>
-                <p><i class="fa-solid fa-phone"></i> الهاتف: <a href="tel:01152822263">01152822263</a></p>
-                <p><i class="fa-brands fa-whatsapp"></i> الواتساب: <a href="https://wa.me/201152822263" target="_blank">01152822263</a></p>
-                <p><i class="fa-solid fa-clock"></i> مواعيد العمل: يومياً من 12:30 ظهراً</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>جميع الحقوق محفوظة © مركز حمزاوي سات - فرع المعادي 2026</p>
-        </div>
-    </footer>
-
     <!-- Floating WhatsApp -->
-    <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20دش%20في%20منطقة%20المعادي%20من%20حمزاوي%20سات" class="floating-whatsapp" target="_blank" title="تواصل فوراً عبر الواتساب">
+    <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20دش%20من%20حمزاوي%20سات" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="واتساب حمزاوي سات">
         <i class="fa-brands fa-whatsapp"></i>
     </a>
 
+    <!-- Footer -->
+    <footer id="contact">
+        <div class="footer-content">
+            <div class="footer-col">
+                <h4>حمزاوي سات</h4>
+                <p>حمزاوي سات لخدمات تركيب وصيانة الدش وكاميرات المراقبة وصيانة الرسيفرات والشاشات في القاهرة والجيزة.</p>
+                <p>
+                    المقر الرئيسي: المعادي<br>
+                    فرع: المهندسين
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>خدماتنا</h4>
+                <ul>
+                    <li><a href="dish.html">تركيب وصيانة الدش</a></li>
+                    <li><a href="cameras.html">كاميرات المراقبة</a></li>
+                    <li><a href="tv.html">تغيير ليدات الشاشات</a></li>
+                    <li><a href="receiver.html">صيانة الرسيفرات</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h4>المقر والموقع</h4>
+                <p><i class="fa-solid fa-location-dot"></i> المقر الرئيسي: المعادي</p>
+                <p><i class="fa-solid fa-store"></i> فرع المهندسين</p>
+                <p style="margin-top: 15px;">
+                    <a href="https://maps.app.goo.gl/4jS7f2czyFvnYyLSA" target="_blank" rel="noopener" class="footer-maps-btn">
+                        <i class="fa-solid fa-map-location-dot"></i> موقعنا على الخريطة
+                    </a>
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>تواصل معنا</h4>
+                <p><i class="fa-solid fa-phone"></i> الهاتف: <a href="tel:01152822263">01152822263</a></p>
+                <p><i class="fa-brands fa-whatsapp"></i> الواتساب: <a href="https://wa.me/201152822263" target="_blank" rel="noopener">01152822263</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 حمزاوي سات. جميع الحقوق محفوظة.</p>
+        </div>
+    </footer>
+
     <script>
-        // كود لتشغيل الـ Accordion في الأسئلة الشائعة
+        // تشغيل الـ Accordion للأسئلة الشائعة
         document.querySelectorAll('.faq-question').forEach(item => {
             item.addEventListener('click', () => {
                 const parent = item.parentElement;
