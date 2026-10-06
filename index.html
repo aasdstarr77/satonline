@@ -3,62 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- === سيو (SEO) محلي للمعادي === -->
-    <!-- تم إضافة "فرع المعادي" في العنوان -->
-    <title>حمزاوي سات (فرع المعادي) خدمات الدش و كاميرات المراقبه وصيانة الشاشات</title>
-    <meta name="description" content="حمزاوي سات - فرع المعادي: تركيب وصيانة دش، برمجة رسيفر، تغيير ليدات شاشات، وتركيب كاميرات مراقبة. خدمة سريعة وضمان في المعادي والمناطق المحيطة.">
+
+    <!-- === SEO الرئيسي === -->
+    <title>حمزاوي سات | تركيب دش وكاميرات مراقبة في القاهرة والجيزة</title>
+    <meta name="description" content="حمزاوي سات لخدمات تركيب وصيانة الدش وكاميرات المراقبة وصيانة الرسيفرات والشاشات في القاهرة والجيزة. خدمة في المعادي وفرع المهندسين والمناطق المحيطة مع فنيين متخصصين وأسعار تنافسية.">
+    <meta name="keywords" content="حمزاوي سات, تركيب دش في القاهرة, تركيب دش في المعادي, تركيب دش في المهندسين, تركيب كاميرات مراقبة في القاهرة, تركيب كاميرات في المعادي, تركيب كاميرات في المهندسين, صيانة رسيفرات, صيانة شاشات, فرع المهندسين, حمزاوي سات المعادي">
     <link rel="canonical" href="https://aasdstarr77.github.io/satonline/">
 
-    <!-- === سيو جامد: بيانات منظمة للنشاط التجاري المحلي (Schema) لفرع المعادي === -->
+    <!-- === بيانات النشاط التجاري Schema === -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
-      "name": "حمزاوي سات - فرع المعادي",
-      "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=400",
+      "@id": "https://aasdstarr77.github.io/satonline/#business",
+      "name": "حمزاوي سات",
+      "alternateName": "حمزاوي سات - خدمات الدش وكاميرات المراقبة",
+      "image": "https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80",
       "telephone": "+201152822263",
       "url": "https://aasdstarr77.github.io/satonline/",
       "address": {
         "@type": "PostalAddress",
-        "streetAddress": "المعادي، القاهرة",
-        "addressLocality": "المعادي، القاهرة",
+        "addressLocality": "المعادي",
+        "addressRegion": "القاهرة",
         "addressCountry": "EG"
       },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 29.9602,
-        "longitude": 31.2569
-      },
+      "areaServed": [
+        { "@type": "City", "name": "القاهرة" },
+        { "@type": "City", "name": "الجيزة" },
+        { "@type": "Place", "name": "المعادي" },
+        { "@type": "Place", "name": "المهندسين" },
+        { "@type": "Place", "name": "الدقي" },
+        { "@type": "Place", "name": "العجوزة" }
+      ],
       "openingHoursSpecification": {
         "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday",
-          "Sunday"
-        ],
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
         "opens": "12:30",
         "closes": "23:00"
       },
       "sameAs": [
         "https://youtube.com/@hmzawysat",
-        "https://cezma.com/store/hmzawysat"
+        "https://cezma.com/store/hmzawysat",
+        "https://maps.app.goo.gl/4jS7f2czyFvnYyLSA"
       ]
     }
     </script>
 
-    <!-- Font Awesome Icons -->
+    <!-- External CSS Libraries -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <!-- Google Fonts Cairo -->
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-    
+
+    <!-- CSS Styles -->
     <style>
         :root {
-            --primary: #0284c7; /* لون أزرق مريح (الأصلي) */
+            --primary: #0284c7;
             --primary-dark: #0369a1;
             --secondary: #f59e0b;
             --dark: #0f172a;
@@ -66,6 +64,7 @@
             --gray: #64748b;
             --border: #e2e8f0;
             --whatsapp: #22c55e;
+            --maps: #ea4335;
         }
 
         * {
@@ -80,6 +79,8 @@
             background-color: var(--light);
             color: var(--dark);
             line-height: 1.6;
+            direction: rtl;
+            text-align: right;
         }
 
         /* Top Bar */
@@ -91,15 +92,22 @@
             justify-content: space-between;
             align-items: center;
             font-size: 0.9rem;
+            gap: 10px;
         }
 
-        .top-info span { margin-left: 15px; }
-        .top-info i { color: var(--secondary); margin-left: 5px; }
+        .top-info span {
+            margin-left: 15px;
+        }
 
-        /* Header / Nav */
+        .top-info i {
+            color: var(--secondary);
+            margin-left: 5px;
+        }
+
+        /* Header Navigation */
         header {
             background: #ffffff;
-            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1);
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -123,20 +131,27 @@
             gap: 10px;
             text-decoration: none;
         }
-        .logo i { color: var(--secondary); }
+
+        .logo i {
+            color: var(--secondary);
+        }
 
         .nav-links {
             display: flex;
             list-style: none;
             gap: 15px;
         }
+
         .nav-links a {
             text-decoration: none;
             color: var(--dark);
             font-weight: 600;
             transition: color 0.3s;
         }
-        .nav-links a:hover { color: var(--primary); }
+
+        .nav-links a:hover {
+            color: var(--primary);
+        }
 
         .cta-btn-nav {
             background-color: var(--primary);
@@ -147,18 +162,25 @@
             font-weight: 700;
             transition: background 0.3s;
         }
-        .cta-btn-nav:hover { background-color: var(--primary-dark); }
+
+        .cta-btn-nav:hover {
+            background-color: var(--primary-dark);
+        }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.92), rgba(3, 105, 161, 0.88)), 
-                        url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80') center/cover;
+            background:
+                linear-gradient(135deg, rgba(15,23,42,0.92), rgba(3,105,161,0.88)),
+                url('https://images.unsplash.com/photo-1557597774-9d273605dfa9?auto=format&fit=crop&w=1200&q=80') center/cover;
             color: #fff;
             padding: 100px 5% 80px;
             text-align: center;
         }
 
-        .hero-content { max-width: 850px; margin: 0 auto; }
+        .hero-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
         .badge {
             background-color: var(--secondary);
@@ -192,25 +214,38 @@
         }
 
         .btn {
-            padding: 12px 28px;
+            padding: 12px 24px;
             border-radius: 8px;
             font-weight: 700;
-            font-size: 1.1rem;
+            font-size: 1rem;
             text-decoration: none;
             display: inline-flex;
             align-items: center;
-            gap: 10px;
-            transition: transform 0.2s, box-shadow 0.2s;
+            gap: 8px;
+            transition: transform 0.2s, opacity 0.2s;
         }
+
         .btn:hover {
             transform: translateY(-2px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+            opacity: 0.95;
         }
 
-        .btn-call { background-color: var(--primary); color: #fff; }
-        .btn-whatsapp { background-color: var(--whatsapp); color: #fff; }
+        .btn-call {
+            background-color: var(--primary);
+            color: #fff;
+        }
 
-        /* Features Bar */
+        .btn-whatsapp {
+            background-color: var(--whatsapp);
+            color: #fff;
+        }
+
+        .btn-maps {
+            background-color: var(--maps);
+            color: #fff;
+        }
+
+        /* Feature Bar */
         .features-bar {
             background: #fff;
             padding: 25px 5%;
@@ -227,13 +262,35 @@
             gap: 20px;
             text-align: center;
         }
-        .feature-item i { font-size: 1.8rem; color: var(--primary); margin-bottom: 8px; }
-        .feature-item h4 { font-size: 1.1rem; font-weight: 700; }
-        .feature-item p { font-size: 0.85rem; color: var(--gray); }
 
-        /* Section Commons */
-        .section { padding: 70px 5%; max-width: 1200px; margin: 0 auto; }
-        .section-title { text-align: center; margin-bottom: 45px; }
+        .feature-item i {
+            font-size: 1.8rem;
+            color: var(--primary);
+            margin-bottom: 8px;
+        }
+
+        .feature-item h4 {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .feature-item p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        /* Section Layouts */
+        .section {
+            padding: 70px 5%;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 45px;
+        }
+
         .section-title h2 {
             font-size: 2rem;
             font-weight: 800;
@@ -241,6 +298,7 @@
             position: relative;
             display: inline-block;
         }
+
         .section-title h2::after {
             content: '';
             display: block;
@@ -250,9 +308,13 @@
             margin: 8px auto 0;
             border-radius: 2px;
         }
-        .section-title p { color: var(--gray); margin-top: 10px; }
 
-        /* Services Grid */
+        .section-title p {
+            color: var(--gray);
+            margin-top: 10px;
+        }
+
+        /* Services Cards Grid */
         .services-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -268,6 +330,7 @@
             display: flex;
             flex-direction: column;
         }
+
         .service-card:hover {
             transform: translateY(-5px);
             box-shadow: 0 10px 20px rgba(0,0,0,0.08);
@@ -279,9 +342,25 @@
             background-position: center;
         }
 
-        .service-body { padding: 20px; flex-grow: 1; display: flex; flex-direction: column; }
-        .service-body h3 { font-size: 1.3rem; margin-bottom: 10px; color: var(--dark); }
-        .service-body p { color: var(--gray); font-size: 0.95rem; margin-bottom: 15px; flex-grow: 1; }
+        .service-body {
+            padding: 20px;
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .service-body h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--dark);
+        }
+
+        .service-body p {
+            color: var(--gray);
+            font-size: 0.95rem;
+            margin-bottom: 15px;
+            flex-grow: 1;
+        }
 
         .service-features {
             list-style: none;
@@ -289,6 +368,7 @@
             border-top: 1px solid var(--border);
             padding-top: 10px;
         }
+
         .service-features li {
             font-size: 0.9rem;
             color: var(--dark);
@@ -297,7 +377,10 @@
             align-items: center;
             gap: 8px;
         }
-        .service-features li i { color: var(--whatsapp); }
+
+        .service-features li i {
+            color: var(--whatsapp);
+        }
 
         .btn-card {
             display: block;
@@ -311,7 +394,11 @@
             font-weight: 700;
             transition: all 0.3s;
         }
-        .btn-card:hover { background-color: var(--primary); color: #fff; }
+
+        .btn-card:hover {
+            background-color: var(--primary);
+            color: #fff;
+        }
 
         /* Guarantee Box */
         .guarantee-box {
@@ -326,10 +413,17 @@
             gap: 20px;
             flex-wrap: wrap;
         }
-        .guarantee-text h3 { font-size: 1.6rem; margin-bottom: 8px; }
-        .guarantee-text p { opacity: 0.9; }
 
-        /* Online Links Section */
+        .guarantee-text h3 {
+            font-size: 1.6rem;
+            margin-bottom: 8px;
+        }
+
+        .guarantee-text p {
+            opacity: 0.9;
+        }
+
+        /* Online & Store Section */
         .online-links {
             background-color: #fff;
             padding: 70px 5%;
@@ -339,9 +433,9 @@
 
         .online-links-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
             gap: 20px;
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
         }
 
@@ -354,40 +448,72 @@
             text-decoration: none;
             color: var(--dark);
             border: 1px solid var(--border);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        .online-link:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 6px 15px rgba(0,0,0,0.05);
+            transition: border-color 0.3s, transform 0.3s;
         }
 
-        .online-link i { font-size: 2.5rem; }
+        .online-link:hover {
+            border-color: var(--primary);
+            transform: translateY(-3px);
+        }
+
+        .online-link i {
+            font-size: 2.3rem;
+        }
+
         .youtube-link i { color: #ff0000; }
         .store-link i { color: var(--primary); }
+        .maps-link i { color: var(--maps); }
 
-        .online-link div h3 { font-size: 1.1rem; margin-bottom: 4px; }
-        .online-link div p { font-size: 0.85rem; color: var(--gray); }
-        .online-link span { margin-right: auto; font-size: 0.85rem; font-weight: 700; color: var(--primary); }
+        .online-link div h3 {
+            font-size: 1.1rem;
+            margin-bottom: 4px;
+        }
 
-        /* FAQ Accordion */
-        .faq-grid { max-width: 800px; margin: 0 auto; display: flex; flex-direction: column; gap: 15px; }
-        .faq-item { background: #fff; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+        .online-link div p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .online-link span {
+            margin-right: auto;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--primary);
+        }
+
+        /* FAQ Section */
+        .faq-grid {
+            max-width: 800px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .faq-item {
+            background: #fff;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
         .faq-question {
             padding: 15px 20px;
             font-weight: 700;
             font-size: 1.05rem;
-            cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             background: #fff;
         }
-        .faq-answer { padding: 0 20px 15px; color: var(--gray); font-size: 0.95rem; display: none; }
-        .faq-item.active .faq-answer { display: block; }
-        .faq-question i { transition: transform 0.3s; color: var(--gray); }
-        .faq-item.active .faq-question i { transform: rotate(180deg); color: var(--primary); }
 
-        /* Floating WhatsApp Button */
+        .faq-answer {
+            padding: 0 20px 15px;
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        /* Floating Widgets */
         .floating-whatsapp {
             position: fixed;
             bottom: 20px;
@@ -406,7 +532,10 @@
             text-decoration: none;
             transition: transform 0.3s;
         }
-        .floating-whatsapp:hover { transform: scale(1.1); }
+
+        .floating-whatsapp:hover {
+            transform: scale(1.1);
+        }
 
         /* Footer */
         footer {
@@ -420,16 +549,50 @@
             max-width: 1200px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
             gap: 30px;
             margin-bottom: 30px;
         }
 
-        .footer-col h4 { font-size: 1.2rem; margin-bottom: 15px; color: var(--secondary); }
-        .footer-col p, .footer-col li { color: #94a3b8; font-size: 0.95rem; margin-bottom: 10px; }
-        .footer-col ul { list-style: none; }
-        .footer-col a { color: #94a3b8; text-decoration: none; transition: color 0.3s; }
-        .footer-col a:hover { color: #fff; }
+        .footer-col h4 {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            color: var(--secondary);
+        }
+
+        .footer-col p,
+        .footer-col li {
+            color: #94a3b8;
+            font-size: 0.95rem;
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col a {
+            color: #94a3b8;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-col a:hover {
+            color: #fff;
+        }
+
+        .footer-maps-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background-color: var(--maps);
+            color: #fff !important;
+            padding: 8px 16px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            margin-top: 8px;
+        }
 
         .footer-bottom {
             text-align: center;
@@ -439,296 +602,458 @@
             font-size: 0.85rem;
         }
 
+        /* Responsive Styles */
         @media (max-width: 768px) {
-            .nav-links { display: none; }
-            .hero h1 { font-size: 1.8rem; }
-            .hero p { font-size: 1rem; }
-            .guarantee-box { text-align: center; justify-content: center; }
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .hero p {
+                font-size: 1rem;
+            }
+
+            .guarantee-box {
+                text-align: center;
+                justify-content: center;
+            }
+
+            .top-bar {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-btns {
+                flex-direction: column;
+            }
+
+            .btn {
+                width: 100%;
+                justify-content: center;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Top Bar -->
-    <div class="top-bar">
-        <div class="top-info">
-            <!-- تم إضافة فرع المعادي -->
-            <span><i class="fa-solid fa-location-dot"></i> المعادي والمناطق المحيطة (فرع المعادي)</span>
-            <span><i class="fa-solid fa-clock"></i> يومياً من 12:30 ظهراً حتى 11 مساءً</span>
-        </div>
-        <div>
-            <span><i class="fa-solid fa-shield-halved"></i> ضمان حقيقي على كافة الخدمات</span>
-        </div>
+<!-- الشريط العلوي -->
+<div class="top-bar">
+    <div class="top-info">
+        <span>
+            <i class="fa-solid fa-location-dot"></i>
+            القاهرة والجيزة والمناطق المحيطة
+        </span>
+        <span>
+            <i class="fa-solid fa-store"></i>
+            المقر الرئيسي: المعادي | فرع المهندسين
+        </span>
+        <span>
+            <i class="fa-solid fa-clock"></i>
+            يومياً من 12:30 ظهراً حتى 11 مساءً
+        </span>
     </div>
+    <div>
+        <span>
+            <i class="fa-solid fa-shield-halved"></i>
+            ضمان حقيقي على كافة الخدمات
+        </span>
+    </div>
+</div>
 
-    <!-- Header Navigation -->
-    <header>
-        <div class="nav-container">
-            <a href="#" class="logo">
-                <i class="fa-solid fa-satellite-dish"></i> حمزاوي سات <span style="font-size: 0.9rem; font-weight:400;">(فرع المعادي)</span>
+<!-- الهيدر Navigation -->
+<header>
+    <div class="nav-container">
+        <a href="#" class="logo">
+            <i class="fa-solid fa-satellite-dish"></i>
+            حمزاوي سات
+        </a>
+
+        <ul class="nav-links">
+            <li><a href="#services">خدماتنا</a></li>
+            <li><a href="#areas">مناطق الخدمة</a></li>
+            <li><a href="#online">المتجر والخريطة</a></li>
+            <li><a href="#faq">الأسئلة الشائعة</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+        </ul>
+
+        <a href="tel:01152822263" class="cta-btn-nav">
+            <i class="fa-solid fa-phone"></i>
+            اطلب فني الآن
+        </a>
+    </div>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-content">
+        <span class="badge">
+            <i class="fa-solid fa-star"></i>
+            حمزاوي سات لخدمة القاهرة والجيزة
+        </span>
+
+        <h1>حمزاوي سات لتركيب وصيانة الدش وكاميرات المراقبة</h1>
+
+        <p>
+            نخدم العملاء في القاهرة والجيزة والمناطق المحيطة
+            مع مقر رئيسي في المعادي وفرع في المهندسين.
+            فنيون متخصصون، تقفيل احترافي، سرعة استجابة وضمان على الخدمات.
+        </p>
+
+        <div class="hero-btns">
+            <a href="tel:01152822263" class="btn btn-call">
+                <i class="fa-solid fa-phone-volume"></i>
+                اطلب الفني الآن
             </a>
-            <ul class="nav-links">
-                <li><a href="#services">خدماتنا</a></li>
-                <li><a href="#online">المتجر واليوتيوب</a></li>
-                <li><a href="#faq">الأسئلة الشائعة</a></li>
-                <li><a href="#contact">تواصل معنا</a></li>
-            </ul>
-            <a href="tel:01152822263" class="cta-btn-nav"><i class="fa-solid fa-phone"></i> اطلب فني الآن</a>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <span class="badge"><i class="fa-solid fa-star"></i> مركز الخدمة الأكثر خبرة بالقاهرة (فرع المعادي)</span>
-            <!-- تم إضافة فرع المعادي بشكل منسق في العنوان -->
-            <h1>حمزاوي سات لخدمات الدش وكاميرات المراقبه </h1>
-            <p>نصلك أينما كنت في المعادي والمناطق المحيطة. فنيون متخصصون، دقة في المواعيد، تقفيل احترافي، وضمان على كافة أعمال الصيانة والقطع.</p>
-            <div class="hero-btns">
-                <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-phone-volume"></i> اطلب الفني الفوري</a>
-                <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20في%20منطقة%20المعادي%20من%20حمزاوي%20سات" class="btn btn-whatsapp" target="_blank"><i class="fa-brands fa-whatsapp"></i> تواصل عبر الواتساب</a>
+            <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20من%20حمزاوي%20سات"
+               class="btn btn-whatsapp"
+               target="_blank"
+               rel="noopener">
+                <i class="fa-brands fa-whatsapp"></i>
+                تواصل عبر الواتساب
+            </a>
+
+            <!-- زر خريطة جوجل -->
+            <a href="https://maps.app.goo.gl/4jS7f2czyFvnYyLSA"
+               class="btn btn-maps"
+               target="_blank"
+               rel="noopener">
+                <i class="fa-solid fa-map-location-dot"></i>
+                موقعنا على الخريطة
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- المميزات السريعة -->
+<div class="features-bar">
+    <div class="feature-item">
+        <i class="fa-solid fa-location-dot"></i>
+        <h4>خدمة داخل القاهرة والجيزة</h4>
+        <p>المعادي والمهندسين والمناطق المحيطة</p>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-bolt"></i>
+        <h4>سرعة الاستجابة</h4>
+        <p>وصول الفني في الموعد المحدد</p>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-screwdriver-wrench"></i>
+        <h4>تقفيل احترافي</h4>
+        <p>تنظيم وتقفيل الأسلاك بدقة</p>
+    </div>
+
+    <div class="feature-item">
+        <i class="fa-solid fa-hand-holding-dollar"></i>
+        <h4>أسعار تنافسية</h4>
+        <p>جودة عالية بسعر مناسب</p>
+    </div>
+</div>
+
+<!-- الخدمات الرئيسية -->
+<section class="section" id="services">
+    <div class="section-title">
+        <h2>خدمات حمزاوي سات في القاهرة والجيزة</h2>
+        <p>
+            تركيب وصيانة الدش وكاميرات المراقبة والرسيفرات والشاشات
+            من خلال المقر الرئيسي في المعادي وفرع المهندسين
+        </p>
+    </div>
+
+    <div class="services-grid">
+        <!-- الدش -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('dish.jpg');"></div>
+            <div class="service-body">
+                <h3>تركيب وصيانة الدش</h3>
+                <p>تركيب وضبط أطباق الدش ومعالجة ضعف الإشارة وتقطيع الصوت والصورة وبرمجة الرسيفرات وتنزيل القنوات.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-circle-check"></i> ضبط إشارة دقيق HD/4K</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تركيب وتغيير أسلاك الدش</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تنزيل وترتيب القنوات</li>
+                    <li><i class="fa-solid fa-circle-check"></i> اشتراكات رياضية وترفيهية</li>
+                </ul>
+                <a href="dish.html" class="btn-card">تفاصيل خدمة الدش</a>
             </div>
         </div>
-    </section>
 
-    <!-- Features Bar -->
-    <div class="features-bar">
-        <div class="feature-item">
-            <i class="fa-solid fa-bolt"></i>
-            <h4>سرعة الاستجابة</h4>
-            <p>وصول الفني في الموعد المحدد مباشرة</p>
+        <!-- الكاميرات -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('camera.jpg');"></div>
+            <div class="service-body">
+                <h3>تركيب كاميرات المراقبة</h3>
+                <p>توريد وتركيب أنظمة كاميرات المراقبة للمنازل والمحلات والشركات مع الربط بالموبايل.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-circle-check"></i> كاميرات IP و HD</li>
+                    <li><i class="fa-solid fa-circle-check"></i> ربط الكاميرات بالموبايل</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تقفيل وتنظيم الكابلات</li>
+                    <li><i class="fa-solid fa-circle-check"></i> حلول للمنازل والمحلات</li>
+                </ul>
+                <a href="cameras.html" class="btn-card">تفاصيل خدمة الكاميرات</a>
+            </div>
         </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-screwdriver-wrench"></i>
-            <h4>تقفيل احترافي</h4>
-            <p>تنظيم وتقفيل الأسلاك بدقة ومظهر نظيف</p>
+
+        <!-- الشاشات -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('tv.jpg');"></div>
+            <div class="service-body">
+                <h3>صيانة الشاشات وتغيير الليدات</h3>
+                <p>صيانة الشاشات وتغيير أطقم الليدات لجميع الماركات والأحجام مع ضمان على الصيانة.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-circle-check"></i> تغيير أطقم الليدات</li>
+                    <li><i class="fa-solid fa-circle-check"></i> ضمان على الصيانة</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تركيب حوامل الشاشات</li>
+                </ul>
+                <a href="tv.html" class="btn-card">تفاصيل خدمة الشاشات</a>
+            </div>
         </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-certificate"></i>
-            <h4>قطع غيار عاليه الجوده</h4>
-            <p>ليدات ومستلزمات أصلية مع الضمان</p>
+
+        <!-- الرسيفرات -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('receiver.jpg');"></div>
+            <div class="service-body">
+                <h3>صيانة وبرمجة الرسيفرات</h3>
+                <p>فحص وصيانة أعطال الرسيفرات ومشاكل التشغيل والصورة والصوت وتحديث السوفت وير والقنوات.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-circle-check"></i> إصلاح أعطال الباور والإشارة</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تحديث السوفت وير</li>
+                    <li><i class="fa-solid fa-circle-check"></i> تحديث وترتيب القنوات</li>
+                </ul>
+                <a href="receiver.html" class="btn-card">تفاصيل خدمة الرسيفرات</a>
+            </div>
         </div>
-        <div class="feature-item">
-            <i class="fa-solid fa-hand-holding-dollar"></i>
-            <h4>أسعار تنافسية</h4>
-            <p>أعلى جودة بأنسب سعر وبدون تكاليف خفية</p>
+
+        <!-- المتجر -->
+        <div class="service-card">
+            <div class="service-img" style="background-image: url('shop.jpg');"></div>
+            <div class="service-body">
+                <h3>متجر حمزاوي سات الإلكتروني</h3>
+                <p>رسيفرات ومستلزمات دش وكاميرات مراقبة وحوامل شاشات بأسعار تنافسية.</p>
+                <ul class="service-features">
+                    <li><i class="fa-solid fa-circle-check"></i> أجهزة رسيفر ودش</li>
+                    <li><i class="fa-solid fa-circle-check"></i> كاميرات ومستلزماتها</li>
+                    <li><i class="fa-solid fa-circle-check"></i> ضمان على المبيعات</li>
+                </ul>
+                <a href="#online" class="btn-card">تصفح المتجر أونلاين</a>
+            </div>
         </div>
     </div>
 
-    <!-- Services Section -->
-    <section class="section" id="services">
-        <div class="section-title">
-            <!-- تم إضافة فرع المعادي في العنوان الفرعي -->
-            <h2>خدماتنا المتخصصة بفرع المعادي</h2>
-            <p>حلول متكاملة للأجهزة المنزلية وأنظمة التأمين للمنازل والمحلات</p>
+    <!-- صندوق الضمان -->
+    <div class="guarantee-box">
+        <div class="guarantee-text">
+            <h3>
+                <i class="fa-solid fa-shield-heart"></i>
+                ضمان حقيقي من حمزاوي سات
+            </h3>
+            <p>خدمات وتركيبات بضمان مع خدمة داخل القاهرة والجيزة من المقر الرئيسي في المعادي وفرع المهندسين.</p>
+        </div>
+        <a href="tel:01152822263" class="btn btn-call">
+            <i class="fa-solid fa-headset"></i>
+            تواصل مع الصيانة
+        </a>
+    </div>
+</section>
+
+<!-- مناطق الخدمة -->
+<section class="section" id="areas">
+    <div class="section-title">
+        <h2>مناطق خدمة حمزاوي سات</h2>
+        <p>خدمة تركيب وصيانة الدش والكاميرات والمعدات المنزلية في مناطق متعددة بالقاهرة والجيزة</p>
+    </div>
+
+    <div class="features-bar" style="margin-top:0;">
+        <div class="feature-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>المعادي</h4>
+            <p>المقر الرئيسي والمناطق المحيطة</p>
         </div>
 
-        <div class="services-grid">
-            <!-- Service 1: الدش -->
-            <div class="service-card">
-                <!-- صورة احترافية مؤقتة للدش -->
-                <div class="service-img" style="background-image: url('dish.jpg');"></div>
-                <div class="service-body">
-                    <h3>تركيب وصيانة أطباق الدش</h3>
-                    <p>ضبط الإشارة بأحدث الأجهزة الرقمية، معالجة تقطيع الصوت والصورة، وبرمجة كافة أنواع الرسيفرات وتحديث القنوات.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-circle-check"></i> ضبط إشارة دقيق للمحتوى العالي HD/4K</li>
-                        <li><i class="fa-solid fa-circle-check"></i> سلك عالي الجودة والتحمل</li>
-                        <li><i class="fa-solid fa-circle-check"></i> تنزيل أحدث ملفات القنوات وترتيبها</li>
-                        <li><i class="fa-solid fa-circle-check"></i> اشتراكات رياضيه وترفيهيه </li>
-                    </ul>
-                    <a href="dish.html" class="btn-card">تفاصيل خدمة الدش</a>
-                </div>
-            </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>المهندسين</h4>
+            <p>فرع المهندسين وخدمة المناطق المحيطة</p>
+        </div>
 
-            <!-- Service 2: الكاميرات -->
-            <div class="service-card">
-                <!-- صورة احترافية مؤقتة للكاميرات -->
-                <div class="service-img" style="background-image: url('camera.jpg');"></div>
-                <div class="service-body">
-                    <h3>كاميرات المراقبة وتأمين المحلات</h3>
-                    <p>توريد وتركيب أحدث أنظمة الكاميرات (IP & HD) للمحلات والمنازل مع الربط المباشر بالموبايل للمتابعة من أي مكان.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-circle-check"></i> ربط الكاميرات بهاتفك الذكي مباشر</li>
-                        <li><i class="fa-solid fa-circle-check"></i> تقفيل مخفي ومحمي للأسلاك والكابلات</li>
-                        <li><i class="fa-solid fa-circle-check"></i> باقات اقتصادية جاهزة للمحلات</li>
-                    </ul>
-                    <a href="cameras.html" class="btn-card">تفاصيل خدمة الكاميرات</a>
-                </div>
-            </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>الدقي والعجوزة</h4>
+            <p>خدمات تركيب وصيانة منزلية</p>
+        </div>
 
-            <!-- Service 3: الشاشات -->
-            <div class="service-card">
-                <!-- صورة احترافية مؤقتة للشاشات -->
-                <div class="service-img" style="background-image: url('tv.jpg');"></div>
-                <div class="service-body">
-                    <h3>صيانة الشاشات وتغيير الليدات</h3>
-                    <p>تغيير طقم الليدات لشاشات (LED) لجميع الماركات والأحجام مع ضمان على الصيانة والإضاءة.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-circle-check"></i> قطع غيار وأطقم ليدات مضمونه 100%</li>
-                        <li><i class="fa-solid fa-circle-check"></i> ضمان على عملية الصيانة</li>
-                        <li><i class="fa-solid fa-circle-check"></i> تركيب حوامل الشاشات (ثابتة/متحركة)</li>
-                    </ul>
-                    <a href="tv.html" class="btn-card">تفاصيل خدمة الشاشات</a>
-                </div>
-            </div>
+        <div class="feature-item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h4>مناطق القاهرة والجيزة</h4>
+            <p>تواصل معنا لتحديد أقرب فني</p>
+        </div>
+    </div>
+</section>
 
-            <!-- Service 4: الرسيفر -->
-            <div class="service-card">
-                <!-- صورة احترافية مؤقتة للرسيفر -->
-                <div class="service-img" style="background-image: url('receiver.jpg');"></div>
-                <div class="service-body">
-                    <h3>صيانة وبرمجة الرسيفرات</h3>
-                    <p>فحص وصيانة أعطال الرسيفرات، مشاكل التشغيل، الصورة، الصوت، وتحديث السوفت وير والقنوات.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-circle-check"></i> فحص وإصلاح أعطال الباور والإشارة</li>
-                        <li><i class="fa-solid fa-circle-check"></i> تحديث ملفات القنوات والسوفت وير</li>
-                        <li><i class="fa-solid fa-circle-check"></i> حل مشاكل التهنيج وتوقف الجهاز</li>
-                        <li><i class="fa-solid fa-circle-check"></i> اشتراكات ترفيهيه ورياضيه</li>
-                    </ul>
-                    <a href="receiver.html" class="btn-card">تفاصيل خدمة الرسيفرات</a>
-                </div>
-            </div>
+<!-- روابط التواصل الاجتماعي والخرائط -->
+<section class="online-links" id="online">
+    <div class="section-title">
+        <h2>حمزاوي سات أونلاين والموقع</h2>
+        <p>تفضل بزيارة موقعنا على الخريطة، تصفح منتجاتنا، وتابع شروحاتنا أونلاين</p>
+    </div>
 
-            <!-- Service 5: المتجر -->
-            <div class="service-card">
-                <!-- صورة احترافية مؤقتة للمتجر -->
-                <div class="service-img" style="background-image: url('shop.jpg');"></div>
-                <div class="service-body">
-                    <h3>متجر حمزاوي سات الإلكتروني</h3>
-                    <p>تصفح واشتري أونلاين: رسيفرات، مستلزمات دش، كاميرات مراقبة، وحوامل شاشات بأسعار ممتازة.</p>
-                    <ul class="service-features">
-                        <li><i class="fa-solid fa-circle-check"></i> أحدث أجهزة الرسيفر والدش</li>
-                        <li><i class="fa-solid fa-circle-check"></i> كاميرات مراقبة ومستلزماتها</li>
-                        <li><i class="fa-solid fa-circle-check"></i> ضمان على جميع المبيعات</li>
-                    </ul>
-                    <a href="#online" class="btn-card">تصفح المتجر أونلاين</a>  
-                </div>
+    <div class="online-links-grid">
+        <!-- الخريطة -->
+        <a href="https://maps.app.goo.gl/4jS7f2czyFvnYyLSA"
+           target="_blank"
+           rel="noopener"
+           class="online-link maps-link">
+            <i class="fa-solid fa-map-location-dot"></i>
+            <div>
+                <h3>موقعنا على الخريطة</h3>
+                <p>احصل على اتجاهات الوصول لمقرنا بسهولة</p>
+            </div>
+            <span>افتح الخريطة</span>
+        </a>
+
+        <!-- يوتيوب -->
+        <a href="https://youtube.com/@hmzawysat"
+           target="_blank"
+           rel="noopener"
+           class="online-link youtube-link">
+            <i class="fa-brands fa-youtube"></i>
+            <div>
+                <h3>قناة حمزاوي سات على يوتيوب</h3>
+                <p>شروحات وحلول أعطال الدش والرسيفر والكاميرات</p>
+            </div>
+            <span>شاهد القناة</span>
+        </a>
+
+        <!-- المتجر -->
+        <a href="https://cezma.com/store/hmzawysat"
+           target="_blank"
+           rel="noopener"
+           class="online-link store-link">
+            <i class="fa-solid fa-store"></i>
+            <div>
+                <h3>متجر حمزاوي سات</h3>
+                <p>تسوق مستلزمات الدش والكاميرات أونلاين</p>
+            </div>
+            <span>تصفح المتجر</span>
+        </a>
+    </div>
+</section>
+
+<!-- الأسئلة الشائعة FAQ -->
+<section class="section" id="faq">
+    <div class="section-title">
+        <h2>الأسئلة الشائعة</h2>
+        <p>إجابات على أهم أسئلة العملاء في القاهرة والجيزة</p>
+    </div>
+
+    <div class="faq-grid">
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>أين يوجد حمزاوي سات؟</span>
+            </div>
+            <div class="faq-answer">
+                يوجد المقر الرئيسي لحمزاوي سات في المعادي، ولدينا فرع في المهندسين لخدمة العملاء في القاهرة والجيزة والمناطق المحيطة. يمكنك الوصول إلينا عبر خرائط جوجل بسهولة.
             </div>
         </div>
 
-        <!-- Guarantee Banner -->
-        <div class="guarantee-box">
-            <div class="guarantee-text">
-                <h3><i class="fa-solid fa-shield-heart"></i> ضمان حقيقي بفرع المعادي</h3>
-                <p>جميع قطع الغيار والتركيبات خاضعة لفترة ضمان لضمان راحة بالك تماماً في المعادي والمناطق المحيطة.</p>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>هل تقدمون خدمة تركيب الدش في المعادي والمهندسين؟</span>
             </div>
-            <a href="tel:01152822263" class="btn btn-call"><i class="fa-solid fa-headset"></i> تواصل مع الصيانة</a>
+            <div class="faq-answer">
+                نعم، نقدم تركيب وصيانة الدش وضبط الإشارة وبرمجة الرسيفرات في المعادي والمهندسين والمناطق المحيطة.
+            </div>
         </div>
-    </section>
 
-    <!-- روابط حمزاوي سات أونلاين -->
-    <section class="online-links" id="online">
-        <div class="container">
-            <div class="section-title">
-                <h2>حمزاوي سات أونلاين</h2>
-                <p>تابع شروحاتنا على يوتيوب وتصفح منتجاتنا على المتجر الإلكتروني</p>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>هل تقدمون تركيب كاميرات مراقبة في القاهرة والجيزة؟</span>
             </div>
+            <div class="faq-answer">
+                نعم، نقدم تركيب وصيانة كاميرات المراقبة للمنازل والمحلات وربطها بالموبايل حسب احتياج العميل.
+            </div>
+        </div>
 
-            <div class="online-links-grid">
-                <a href="https://youtube.com/@hmzawysat?si=rPbxc4LN2RYpf-gj" target="_blank" rel="noopener" class="online-link youtube-link">
-                    <i class="fa-brands fa-youtube"></i>
-                    <div>
-                        <h3>قناة حمزاوي سات على يوتيوب</h3>
-                        <p>شروحات، حلول أعطال الدش، الرسيفر، والكاميرات</p>
-                    </div>
-                    <span>شاهد القناة</span>
+        <div class="faq-item">
+            <div class="faq-question">
+                <span>هل يمكن متابعة كاميرات المراقبة من الموبايل؟</span>
+            </div>
+            <div class="faq-answer">
+                نعم، نقوم بربط جهاز التسجيل بتطبيق الموبايل لمتابعة الكاميرات والتسجيلات عن بعد.
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- زر واتساب عائم -->
+<a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20من%20حمزاوي%20سات"
+   class="floating-whatsapp"
+   target="_blank"
+   rel="noopener"
+   aria-label="واتساب حمزاوي سات">
+    <i class="fa-brands fa-whatsapp"></i>
+</a>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="footer-content">
+        <div class="footer-col">
+            <h4>حمزاوي سات</h4>
+            <p>حمزاوي سات لخدمات تركيب وصيانة الدش وكاميرات المراقبة وصيانة الرسيفرات والشاشات في القاهرة والجيزة.</p>
+            <p>
+                المقر الرئيسي: المعادي<br>
+                فرع: المهندسين
+            </p>
+        </div>
+
+        <div class="footer-col">
+            <h4>خدماتنا</h4>
+            <ul>
+                <li><a href="dish.html">تركيب وصيانة الدش</a></li>
+                <li><a href="cameras.html">كاميرات المراقبة</a></li>
+                <li><a href="tv.html">تغيير ليدات الشاشات</a></li>
+                <li><a href="receiver.html">صيانة الرسيفرات</a></li>
+                <li><a href="#services">اشتراكات رياضية وترفيهية</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-col">
+            <h4>المقر والموقع</h4>
+            <p><i class="fa-solid fa-location-dot"></i> المقر الرئيسي: المعادي</p>
+            <p><i class="fa-solid fa-store"></i> فرع المهندسين</p>
+            <p style="margin-top: 15px;">
+                <!-- زر الخريطة بالفوتر -->
+                <a href="https://maps.app.goo.gl/4jS7f2czyFvnYyLSA"
+                   target="_blank"
+                   rel="noopener"
+                   class="footer-maps-btn">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                    موقعنا على الخريطة
                 </a>
-
-                <a href="https://cezma.com/store/hmzawysat" target="_blank" rel="noopener" class="online-link store-link">
-                    <i class="fa-solid fa-store"></i>
-                    <div>
-                        <h3>متجر حمزاوي سات على سيزما</h3>
-                        <p>تسوق مستلزمات الدش والكاميرات أونلاين</p>
-                    </div>
-                    <span>تصفح المتجر</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <!-- FAQ Section -->
-    <section class="section" id="faq">
-        <div class="section-title">
-            <h2>الأسئلة الشائعة - فرع المعادي</h2>
-            <p>إجابات مباشرة على أكثر استفسارات عملائنا في القاهرة</p>
+            </p>
         </div>
 
-        <div class="faq-grid">
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>هل تقدمون ضماناً على تغيير ليدات الشاشات في المعادي؟</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    نعم بالتأكيد، نستخدم أطقم ليدات أصلية ومطابقة لمواصفات المصنع، ونقدم ضماناً مكتوباً على الصيانة لضمان جودة الإضاءة وعمرها الافتراضي.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>ما هي المناطق التي يغطيها فرع المعادي؟</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    نصلك في أسرع وقت داخل المعادي، حدائق المعادي، زهراء المعادي، دجلة، البساتين، ودار السلام. يمكنك التواصل معنا وتحديد موقعك ليصلك الفني المختص.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">
-                    <span>هل يمكنني متابعة كاميرات المراقبة من الموبايل وأنا خارج البيت؟</span>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </div>
-                <div class="faq-answer">
-                    نعم، نقوم بربط جهاز التسجيل (DVR/NVR) بتطبيق الموبايل الخاص بك، مما يتيح لك رؤية بث الكاميرات المباشر والتسجيلات من أي مكان في العالم عبر الإنترنت.
-                </div>
-            </div>
+        <div class="footer-col">
+            <h4>تواصل معنا</h4>
+            <p>
+                <i class="fa-solid fa-phone"></i> الهاتف: 
+                <a href="tel:01152822263">01152822263</a>
+            </p>
+            <p>
+                <i class="fa-brands fa-whatsapp"></i> الواتساب: 
+                <a href="https://wa.me/201152822263" target="_blank" rel="noopener">01152822263</a>
+            </p>
         </div>
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="footer-content">
-            <div class="footer-col">
-                <h4>مركز حمزاوي سات .. فرع المعادي</h4>
-                <p>المركز المتخصص في خدمات صيانة وتركيب الدش، أنظمة المراقبة الحديثة، وصيانة الشاشات والرسيفر في المعادي.</p>
-            </div>
-            <div class="footer-col">
-                <h4>روابط سريعة</h4>
-                <ul>
-                    <li><a href="#services">تركيب وصيانة الدش</a></li>
-                    <li><a href="#services">كاميرات المراقبة</a></li>
-                    <li><a href="#services">تغيير ليدات الشاشات</a></li>
-                    <li><a href="#services">صيانة الرسيفرات</a></li>
-                    <li><a href="https://cezma.com/store/hmzawysat" target="_blank">المتجر الإلكتروني</a></li>
-                </ul>
-            </div>
-            <div class="footer-col">
-                <h4>تواصل معنا</h4>
-                <p><i class="fa-solid fa-phone"></i> الهاتف: <a href="tel:01152822263">01152822263</a></p>
-                <p><i class="fa-brands fa-whatsapp"></i> الواتساب: <a href="https://wa.me/201152822263" target="_blank">01152822263</a></p>
-                <p><i class="fa-solid fa-clock"></i> مواعيد العمل: يومياً من 12:30 ظهراً</p>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>جميع الحقوق محفوظة © مركز حمزاوي سات - فرع المعادي 2026</p>
-        </div>
-    </footer>
-
-    <!-- Floating WhatsApp -->
-    <a href="https://wa.me/201152822263?text=السلام%20عليكم،%20أحتاج%20فني%20في%20منطقة%20المعادي%20من%20حمزاوي%20سات" class="floating-whatsapp" target="_blank" title="تواصل عبر الواتساب">
-        <i class="fa-brands fa-whatsapp"></i>
-    </a>
-
-    <script>
-        document.querySelectorAll('.faq-question').forEach(item => {
-            item.addEventListener('click', () => {
-                const parent = item.parentElement;
-                parent.classList.toggle('active');
-            });
-        });
-    </script>
+    <div class="footer-bottom">
+        <p>&copy; 2026 حمزاوي سات. جميع الحقوق محفوظة.</p>
+    </div>
+</footer>
 
 </body>
 </html>
