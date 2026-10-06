@@ -1,0 +1,13 @@
+{
+  "background_color": "#563636",
+  "description": "حمزاوي سات لخدمات تركيب وصيانة الدش وكاميرات المراقبة وصيانة الرسيفرات والشاشات في القاهرة والجيزة. خدمة في المعادي وفرع المهندسين والمناطق المحيطة مع فنيين متخصصين وأسعار تنافسية.",
+  "dir": "ltr",
+  "display": "standalone",
+  "name": "HMZAWY SAT",
+  "orientation": "any",
+  "scope": "/",
+  "short_name": "HMZAWY SAT",
+  "start_url": "/",
+  "theme_color": "#ad9b9b",
+  "id": "2525"
+}
